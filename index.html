@@ -3,351 +3,377 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>НАДАВТО — капремонт КАМАЗ в Набережных Челнах</title>
+<title>НАДАВТО — капитальный ремонт КАМАЗ в Набережных Челнах</title>
 <meta name="description" content="Капитальный ремонт и восстановление КАМАЗ, ремонт аварийных машин, переоборудование. Срок 30 дней, гарантия до 6 месяцев.">
-<meta property="og:title" content="НАДАВТО — капремонт КАМАЗ в Набережных Челнах">
+<meta property="og:title" content="НАДАВТО — капитальный ремонт КАМАЗ">
 <meta property="og:description" content="Капремонт «под новый» за 30 дней. Гарантия до 6 месяцев. Отгрузка по всей России.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0e1116">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1116'/%3E%3Cpath d='M14 48V16h8l20 20V16h8v32h-8L22 28v20z' fill='%23ff7a00'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+<meta property="og:image" content="media/gal11.webp">
+<meta name="theme-color" content="#141515">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff5d02'/%3E%3Cpath d='M16 48V16h7v12h18V16h7v32h-7V34H23v14z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=PT+Mono&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0e1116;--bg2:#151a22;--card:#1a212b;--line:#2a3340;--tx:#e8ecf1;--mut:#8f9bab;--ac:#ff7a00;--ac2:#ffb347;--r:16px}
+:root{--ink:#141515;--g1:#1a1a1a;--g2:#1e1e1e;--g3:#282828;--line:#343434;--soft:#f3f3f3;--silver:#e2e2e2;--mute:#9a9a9a;--ac:#ff5d02;--r:14px}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:"Golos Text","Segoe UI",system-ui,sans-serif;background:var(--g1);color:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
-section{padding:84px 0}
-h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
-h2{font-size:clamp(28px,4vw,44px);margin-bottom:12px}
-.lead{color:var(--mut);max-width:640px;margin-bottom:40px}
-.tag{display:inline-block;color:var(--ac);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;border-radius:12px;font-weight:700;border:0;cursor:pointer;font-size:16px;transition:.25s}
-.btn.p{background:linear-gradient(135deg,var(--ac),#ff9a2e);color:#111;box-shadow:0 8px 28px rgba(255,122,0,.35)}
-.btn.p:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(255,122,0,.5)}
-.btn.g{border:1px solid var(--line);color:var(--tx);background:transparent}
-.btn.g:hover{border-color:var(--ac);color:var(--ac)}
-.top{background:#090b0f;font-size:13px;color:var(--mut);padding:8px 0}
-.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-header{position:sticky;top:0;z-index:50;background:rgba(14,17,22,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
-.logo{font-weight:900;font-size:24px;letter-spacing:.04em}
-.logo b{color:var(--ac)}
-nav{display:flex;gap:26px;font-size:15px;font-weight:500}
-nav a{color:var(--mut);transition:.2s}nav a:hover{color:var(--ac)}
-.tel{font-weight:800;font-size:17px}
-.burger{display:none;background:none;border:0;color:var(--tx);font-size:28px}
-.hero{position:relative;padding:100px 0 80px;overflow:hidden;background:radial-gradient(900px 500px at 85% 20%,rgba(255,122,0,.22),transparent 60%),radial-gradient(600px 400px at 0 100%,rgba(60,110,200,.15),transparent 60%)}
-.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 60px,rgba(255,255,255,.025) 60px 61px)}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(36px,6vw,72px);margin-bottom:22px}
-.hero h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{color:var(--mut);font-size:18px;max-width:520px;margin-bottom:34px}
-.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
-.truck{width:100%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.5));animation:fl 6s ease-in-out infinite}
-@keyframes fl{50%{transform:translateY(-10px)}}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:64px;position:relative}
-.stat{background:rgba(26,33,43,.7);border:1px solid var(--line);border-radius:var(--r);padding:22px}
-.stat b{display:block;font-size:34px;color:var(--ac)}
-.stat span{color:var(--mut);font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:.3s;overflow:hidden}
-.card:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,122,0,.14),transparent 55%);opacity:0;transition:.3s;pointer-events:none}
-.card:hover{transform:translateY(-6px);border-color:var(--ac)}.card:hover:before{opacity:1}
-.card .n{font-size:13px;color:var(--ac);font-weight:700}
-.card .ic{font-size:30px;margin:10px 0}
-.card h3{font-size:18px;position:relative}
-.alt{background:var(--bg2)}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
-.step{border-left:2px solid var(--ac);padding:4px 0 4px 20px;counter-increment:s}
-.step:before{content:"0" counter(s);display:block;font-size:34px;font-weight:900;color:var(--ac);opacity:.9}
-.step h3{margin:6px 0;font-size:19px}.step p{color:var(--mut);font-size:15px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.list{list-style:none}
-.list li{padding:10px 0 10px 32px;border-bottom:1px solid var(--line);position:relative}
-.list li:before{content:"✓";position:absolute;left:0;color:var(--ac);font-weight:900}
-.calc{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:36px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px}
-.chips{display:flex;flex-wrap:wrap;gap:10px}
-.chip{padding:11px 18px;border-radius:999px;border:1px solid var(--line);cursor:pointer;user-select:none;transition:.2s;font-size:15px}
-.chip.on{background:var(--ac);color:#111;border-color:var(--ac);font-weight:700}
-.chip:hover{border-color:var(--ac)}
-input,select,textarea{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font:inherit;margin-bottom:12px}
-input:focus{outline:0;border-color:var(--ac)}
-.res{background:var(--bg);border-radius:18px;padding:26px;border:1px dashed var(--ac)}
-.res b{font-size:40px;color:var(--ac);display:block}
-.pr{display:flex;justify-content:space-between;align-items:center;gap:16px}
-.pr em{font-style:normal;color:var(--ac);font-size:24px}
-.cities{display:flex;flex-wrap:wrap;gap:10px}
-.cities span{padding:10px 18px;background:var(--card);border:1px solid var(--line);border-radius:999px;font-size:14px}
-.cities span:hover{border-color:var(--ac);color:var(--ac)}
-.adv .card h3{margin:8px 0}.adv .card p{color:var(--mut);font-size:15px;position:relative}
-.contact{background:linear-gradient(135deg,#1c1206,#0e1116 60%);border-top:1px solid var(--line)}
-.contact .two{align-items:start}
-.cl p{margin-bottom:14px;color:var(--mut)}.cl b{display:block;color:var(--tx);font-size:19px}
-footer{padding:28px 0;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.rv{opacity:0;transform:translateY(28px);transition:.7s}.rv.in{opacity:1;transform:none}
-.float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--ac);color:#111;display:grid;place-items:center;font-size:26px;box-shadow:0 0 0 0 rgba(255,122,0,.6);animation:pl 2s infinite}
-@keyframes pl{to{box-shadow:0 0 0 22px rgba(255,122,0,0)}}
-.ph{aspect-ratio:4/3;border-radius:12px;background:linear-gradient(135deg,#222b37,#141a22);display:grid;place-items:center;font-size:42px;margin-bottom:14px;position:relative;overflow:hidden}
-.ph:after{content:"фото";position:absolute;right:10px;bottom:8px;font-size:11px;color:var(--mut);letter-spacing:.1em;text-transform:uppercase}
-.promo{background:linear-gradient(135deg,var(--ac),#ff9a2e);color:#111;border:0}
-.promo p{color:#2b1800!important}.promo h3{font-size:22px}
-details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:12px}
-summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between}
-summary:after{content:"+";color:var(--ac);font-size:22px;line-height:1}
-details[open] summary:after{content:"−"}
-details p{color:var(--mut);margin-top:12px}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;place-items:center;z-index:100;padding:20px}
-.modal.on{display:grid}.modal .card{max-width:420px;width:100%}
-.top-btn{position:fixed;left:18px;bottom:18px;z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--tx);cursor:pointer;display:none;font-size:18px}
-.bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));z-index:200}
-header{transition:.3s}header.sm .wrap{height:56px}header .wrap{transition:.3s}
-body{animation:pg .8s ease both}@keyframes pg{from{opacity:0}}
-.hs{position:relative;aspect-ratio:4/3;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 6px rgba(255,122,0,.08);transform:perspective(1200px) rotateY(-4deg);transition:transform .5s}
-.hs:hover{transform:perspective(1200px) rotateY(0)}
-.hs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.02);transition:opacity 1.2s}
-.hs img.on{opacity:1;animation:kb 9s ease-out forwards}
-@keyframes kb{to{transform:scale(1.12)}}
-.hs .dots{position:absolute;left:16px;bottom:14px;display:flex;gap:8px;z-index:2}
-.hs .dots i{width:26px;height:4px;border-radius:2px;background:rgba(255,255,255,.35);cursor:pointer}.hs .dots i.on{background:var(--ac)}
-.hs:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,17,22,.55),transparent 45%);pointer-events:none}
+img{max-width:100%}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.light{background:var(--soft);color:var(--ink)}
+.dark2{background:var(--ink)}
+h1,h2,h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;font-weight:600;line-height:1.05}
+h2{font-size:clamp(30px,4.2vw,56px);margin-bottom:18px}
+.eyebrow{font-family:"PT Mono",monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.eyebrow:before{content:"";width:28px;height:2px;background:var(--ac)}
+.lead{max-width:640px;color:var(--mute);font-size:18px;margin-bottom:48px}
+.light .lead{color:#5b5f62}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 34px;border-radius:50px;font-family:Oswald,sans-serif;font-weight:600;font-size:16px;letter-spacing:.05em;text-transform:uppercase;background:var(--ac);color:#fff;border:1px solid var(--ac);cursor:pointer;transition:.25s}
+.btn:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.4)}
+.btn.ghost:hover{background:#fff;color:var(--ink)}
+.light .btn.ghost{border-color:#bdbdbd;color:var(--ink)}
+.light .btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.wide{width:100%}
+header{position:fixed;top:0;left:0;right:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.14);transition:background .3s}
+header.solid{background:var(--ink);border-color:var(--line)}
+header .wrap{display:flex;align-items:center;gap:36px;height:84px;transition:height .3s}
+header.solid .wrap{height:68px}
+.logo{font-family:Oswald,sans-serif;font-weight:700;font-size:28px;letter-spacing:.06em;display:flex;align-items:center;gap:10px}
+.logo i{width:12px;height:12px;background:var(--ac);border-radius:3px}
+nav{display:flex;gap:28px;margin-left:auto;font-size:15px;font-weight:500}
+nav a{opacity:.8;transition:.2s}nav a:hover{opacity:1;color:var(--ac)}
+.hc{display:flex;flex-direction:column;line-height:1.2;text-align:right}
+.hc b{font-family:Oswald,sans-serif;font-size:20px;letter-spacing:.03em}
+.hc span{font-size:12px;color:var(--mute)}
+header .btn{padding:11px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;color:#fff;font-size:30px;margin-left:auto;cursor:pointer}
+.hero{position:relative;min-height:880px;padding:170px 0 0;display:flex;flex-direction:column;justify-content:space-between;background:#0c0d0d url(media/gal11.webp) center/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,21,21,.92) 0%,rgba(20,21,21,.7) 55%,rgba(20,21,21,.35)),linear-gradient(0deg,var(--g1),transparent 30%)}
+.hero .wrap{position:relative;width:100%}
+.hg{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,6.4vw,92px);font-weight:700;margin-bottom:26px}
+.hero h1 em{font-style:normal;color:var(--ac)}
+.hero p.s{font-size:19px;color:#d4d6d8;max-width:560px;margin-bottom:36px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.form{background:rgba(26,26,26,.92);border:1px solid var(--line);border-radius:20px;padding:32px}
+.form h3{font-size:28px;margin-bottom:8px}
+.form p.m{color:var(--mute);font-size:14px;margin-bottom:20px}
+input,select,textarea{width:100%;padding:15px 18px;border-radius:10px;border:1px solid var(--line);background:var(--g2);color:#fff;font:inherit;margin-bottom:12px;transition:.2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--ac)}
+.ck{display:flex;gap:10px;font-size:12px;color:var(--mute);margin:4px 0 18px;align-items:flex-start}
+.ck input{width:auto;margin:3px 0 0;accent-color:var(--ac)}
+.ok{padding:30px 0;text-align:center}.ok b{display:block;font-family:Oswald,sans-serif;font-size:28px;text-transform:uppercase;margin-bottom:8px}
+.facts{position:relative;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.18);margin-top:80px;background:rgba(20,21,21,.6)}
+.fact{padding:28px 28px 30px;border-right:1px solid rgba(255,255,255,.14)}
+.fact:last-child{border:0}
+.fact b{display:block;font-family:Oswald,sans-serif;font-size:40px;font-weight:600;line-height:1;margin-bottom:8px}
+.fact span{font-family:"PT Mono",monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.mq{overflow:hidden;background:var(--ink);border-block:1px solid var(--line);padding:22px 0}
+.mq div{display:flex;align-items:center;gap:40px;width:max-content;animation:mq 45s linear infinite}
+.mq span{font-family:Oswald,sans-serif;font-size:22px;letter-spacing:.1em;text-transform:uppercase;color:#cfd1d3;white-space:nowrap}
+.mq svg{width:44px;height:44px;flex:none;animation:spin 7s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}@keyframes spin{to{transform:rotate(360deg)}}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.sc{background:#fff;border:1px solid var(--silver);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.3s}
+.sc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.12)}
+.sc .im{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--silver)}
+.sc .im img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s}
+.sc:hover .im img{transform:scale(1.06)}
+.sc .n{position:absolute;left:14px;top:14px;background:var(--ink);color:#fff;font-family:"PT Mono",monospace;font-size:13px;padding:5px 11px;border-radius:50px}
+.sc .bd{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.sc h3{font-size:19px;line-height:1.2;margin-bottom:16px;flex:1}
+.sc .more{display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:600;border-top:1px solid var(--silver);padding-top:14px}
+.sc .more:after{content:"→";color:var(--ac);font-size:20px;transition:.3s}
+.sc:hover .more:after{transform:translateX(5px)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.step{padding:36px 30px 40px;border-right:1px solid var(--line)}.step:last-child{border:0}
+.step i{font-style:normal;font-family:"PT Mono",monospace;color:var(--ac);font-size:14px}
+.step h3{font-size:26px;margin:44px 0 12px}
+.step p{color:var(--mute);font-size:15px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:#fff;border:1px solid var(--silver);border-radius:20px;padding:36px}
+.panel h3{font-size:28px;margin-bottom:20px}
+.spec{list-style:none}
+.spec li{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--silver);font-size:16px}
+.spec li:before{content:"";flex:none;width:8px;height:8px;margin-top:9px;background:var(--ac);border-radius:2px}
+.spec li:last-child{border:0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tags span{padding:9px 16px;border:1px solid #cfcfcf;border-radius:50px;font-size:14px}
+.adv{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.ad{position:relative;min-height:430px;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;isolation:isolate;border:1px solid var(--line)}
+.ad img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s}
+.ad:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(20,21,21,.96) 15%,rgba(20,21,21,.35) 70%)}
+.ad:hover img{transform:scale(1.06)}
+.ad i{font-style:normal;font-family:"PT Mono",monospace;font-size:13px;color:var(--ac);margin-bottom:12px}
+.ad h3{font-size:24px;margin-bottom:10px}
+.ad p{font-size:14px;color:#c4c7ca}
+.calc{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.chip{padding:13px 22px;border-radius:50px;border:1px solid #bdbdbd;cursor:pointer;user-select:none;transition:.2s;font-weight:500;background:#fff}
+.chip:hover{border-color:var(--ink)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.note{font-size:14px;color:#6b6f72}
+.cform{background:var(--ink);color:#fff;border-radius:20px;padding:32px}
+.cform h3{font-size:28px;margin-bottom:6px}
+.cform .cnt{font-family:"PT Mono",monospace;font-size:13px;color:var(--mute);margin-bottom:18px;display:block}
 .vids{display:grid;grid-template-columns:1.6fr 1fr;gap:18px}
-.vbig{grid-row:span 2}
-.vc{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#000;transition:.35s}
-.vc:hover{transform:translateY(-5px);border-color:var(--ac);box-shadow:0 20px 50px rgba(255,122,0,.18)}
+.vbig{grid-row:span 3}
+.vc{position:relative;border-radius:var(--r);overflow:hidden;background:#000;border:1px solid var(--line)}
 .vc video{width:100%;height:100%;display:block;object-fit:cover;aspect-ratio:16/9}
 .vbig video{aspect-ratio:auto;min-height:100%}
-.vc span{position:absolute;left:14px;top:12px;background:rgba(14,17,22,.8);padding:6px 12px;border-radius:999px;font-size:13px;pointer-events:none;backdrop-filter:blur(6px)}
-.gal{columns:3 260px;column-gap:16px}
-.gi{break-inside:avoid;margin-bottom:16px;position:relative;border-radius:var(--r);overflow:hidden;cursor:zoom-in;border:1px solid var(--line);background:var(--card)}
-.gi img{width:100%;display:block;transition:transform .7s}
-.gi:hover img{transform:scale(1.07)}
-.gi div{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 14px;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent);font-size:14px;transform:translateY(100%);transition:.4s}
-.gi:hover div{transform:none}
-.lb{position:fixed;inset:0;background:rgba(5,7,10,.94);z-index:300;display:none;place-items:center;padding:20px}
-.lb.on{display:grid;animation:pg .3s}
-.lb img{max-width:92vw;max-height:80vh;border-radius:12px;box-shadow:0 30px 90px #000}
-.lb p{text-align:center;margin-top:14px;color:var(--mut)}
-.lb button{position:absolute;background:rgba(255,255,255,.1);border:0;color:#fff;width:52px;height:52px;border-radius:50%;font-size:24px;cursor:pointer;transition:.2s}
-.lb button:hover{background:var(--ac);color:#111}
-.lb .x{top:20px;right:20px}.lb .pv{left:20px;top:50%}.lb .nx{right:20px;top:50%}
-.rv:nth-child(2){transition-delay:.08s}.rv:nth-child(3){transition-delay:.16s}.rv:nth-child(4){transition-delay:.24s}
-@media(max-width:900px){.vids{grid-template-columns:1fr}.hs{transform:none}}
-:root{--bl:#3d7bff;--vi:#8b5cf6}
-body{font-family:Manrope,"Segoe UI",system-ui,sans-serif;background:var(--bg) radial-gradient(1100px 600px at 100% 0,rgba(61,123,255,.10),transparent 60%) fixed}
-h1,h2,.logo{font-family:Unbounded,Manrope,sans-serif;letter-spacing:-.01em}
-h1{font-size:clamp(30px,4.8vw,58px)!important;font-weight:800}
-h2{font-size:clamp(24px,3.4vw,40px);font-weight:700}
-h2:after{content:"";display:block;width:64px;height:4px;border-radius:2px;margin-top:16px;background:linear-gradient(90deg,var(--ac),var(--vi))}
-.tag{background:rgba(255,122,0,.12);border:1px solid rgba(255,122,0,.35);padding:6px 14px;border-radius:999px}
-.alt{background:radial-gradient(800px 400px at 0 0,rgba(139,92,246,.14),transparent 60%),radial-gradient(800px 400px at 100% 100%,rgba(61,123,255,.13),transparent 60%),var(--bg2)}
-.hero h1 span{background:linear-gradient(90deg,var(--ac),#ff4d8d 60%,var(--vi));-webkit-background-clip:text;background-clip:text}
-.stat{background:linear-gradient(145deg,rgba(255,122,0,.14),rgba(61,123,255,.10));backdrop-filter:blur(10px)}
-.stat b{font-family:Unbounded,sans-serif;background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.mq{overflow:hidden;border-block:1px solid var(--line);background:linear-gradient(90deg,#1b1207,#0f1320 50%,#1b1207);padding:18px 0}
-.mq div{display:flex;gap:48px;width:max-content;animation:mq 38s linear infinite;font-family:Unbounded,sans-serif;font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
-.mq span{color:var(--mut)}.mq span:nth-child(3n){color:var(--ac)}.mq i{color:var(--vi);font-style:normal}
-@keyframes mq{to{transform:translateX(-50%)}}
-.grid{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-.sc{padding:0;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,rgba(255,122,0,.5),rgba(61,123,255,.4)) border-box;border:1px solid transparent}
-.sc .im{position:relative;aspect-ratio:16/10;overflow:hidden}
-.sc .im img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}
-.sc .im:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--card),transparent 55%)}
-.sc:hover .im img{transform:scale(1.1)}
-.sc .n{position:absolute;left:14px;top:14px;z-index:2;background:linear-gradient(135deg,var(--ac),#ff4d8d);color:#fff;padding:5px 12px;border-radius:999px;font-weight:800}
-.sc .bd{padding:6px 22px 22px;position:relative;z-index:1}
-.sc h3{font-size:17px;min-height:46px}
-.sc .more{display:inline-block;margin-top:12px;color:var(--ac);font-weight:700;font-size:14px;transition:.3s}
-.sc:hover .more{transform:translateX(6px)}
-.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
-.ad{position:relative;grid-column:span 2;min-height:340px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;border:1px solid var(--line);isolation:isolate}
-.ad:nth-child(-n+2){grid-column:span 3;min-height:380px}
-.ad img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .9s}
-.ad:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(9,11,15,.96) 8%,rgba(9,11,15,.45) 60%,rgba(255,122,0,.10));transition:.5s}
-.ad:hover img{transform:scale(1.1)}.ad:hover:after{background:linear-gradient(0deg,rgba(9,11,15,.92) 8%,rgba(9,11,15,.2) 70%,rgba(255,122,0,.25))}
-.ad b{position:absolute;top:14px;right:22px;font-family:Unbounded,sans-serif;font-size:64px;font-weight:800;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.35);transition:.4s}
-.ad:hover b{-webkit-text-stroke-color:var(--ac);transform:translateY(-4px)}
-.ad h3{font-size:24px;font-family:Unbounded,sans-serif;margin-bottom:8px}
-.ad p{color:#c9d2de;font-size:15px;max-width:420px}
-.ad h3:before{content:"";display:block;width:36px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--ac),var(--vi));margin-bottom:14px;transition:width .5s}
-.ad:hover h3:before{width:90px}
-@media(max-width:900px){.bento{grid-template-columns:1fr}.ad,.ad:nth-child(-n+2){grid-column:auto;min-height:280px}}
-.gal{columns:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.gi{margin:0;aspect-ratio:4/3;border-radius:14px}
-.gi img{height:100%!important;width:100%;object-fit:cover}
+.vc span{position:absolute;left:14px;top:14px;background:rgba(20,21,21,.85);padding:6px 14px;border-radius:50px;font-family:"PT Mono",monospace;font-size:12px;pointer-events:none}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gi{position:relative;aspect-ratio:4/3;border-radius:12px;overflow:hidden;cursor:zoom-in;background:var(--silver)}
 .gi.hid{display:none}
-.gi:after{content:"⤢";position:absolute;right:12px;top:10px;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:rgba(14,17,22,.7);opacity:0;transition:.3s}
-.gi:hover:after{opacity:1}
-.gmore{text-align:center;margin-top:28px}
-@media(max-width:900px){.gal{grid-template-columns:repeat(2,1fr);gap:10px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.gi img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s}
+.gi:hover img{transform:scale(1.06)}
+.gi div{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;color:#fff;font-size:13px;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent);transform:translateY(100%);transition:.35s}
+.gi:hover div{transform:none}
+.gmore{text-align:center;margin-top:32px}
+.lbx{position:fixed;inset:0;background:rgba(10,11,11,.95);z-index:300;display:none;place-items:center;padding:20px}
+.lbx.on{display:grid}
+.lbx img{max-width:92vw;max-height:80vh;border-radius:10px}
+.lbx p{text-align:center;margin-top:14px;color:#bbb;font-size:15px}
+.lbx button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;font-size:22px;cursor:pointer;transition:.2s}
+.lbx button:hover{background:var(--ac)}
+.lbx .x{top:20px;right:20px}.lbx .pv{left:20px;top:calc(50% - 26px)}.lbx .nx{right:20px;top:calc(50% - 26px)}
+.prow{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);transition:.25s}
+.prow:first-child{border-top:1px solid var(--line)}
+.prow:hover{padding-left:14px}
+.prow h3{font-size:28px}.prow span{color:var(--mute);font-size:14px}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.of{border:1px solid var(--line);border-left:3px solid var(--ac);border-radius:var(--r);padding:26px;background:var(--g2)}
+.of h3{font-size:22px;margin-bottom:10px}.of p{color:var(--mute);font-size:15px}
+.cities{display:flex;flex-wrap:wrap;gap:10px}
+.cities span{padding:10px 20px;border:1px solid #c8c8c8;border-radius:50px;font-size:15px;background:#fff}
+details{background:#fff;border:1px solid var(--silver);border-radius:12px;padding:20px 24px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--ac);font-size:26px;line-height:1}
+details[open] summary:after{content:"−"}
+details p{color:#5b5f62;margin-top:12px}
+.gf{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.cl{display:grid;gap:0}
+.cl div{padding:18px 0;border-bottom:1px solid var(--line)}
+.cl div:first-child{border-top:1px solid var(--line)}
+.cl small{display:block;font-family:"PT Mono",monospace;font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.cl b{font-size:21px;font-weight:600}
+.msg{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+footer{background:var(--ink);border-top:1px solid var(--line);padding:36px 0 40px;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:rgba(10,11,11,.8);display:none;place-items:center;z-index:250;padding:20px}
+.modal.on{display:grid}.modal .form{max-width:440px;width:100%;background:var(--g1)}
+.mbar{display:none}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(2,1fr)}.adv{grid-template-columns:repeat(2,1fr)}.gal{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:900px){
-nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px;border-bottom:1px solid var(--line)}
-nav.open{display:flex}.burger{display:block}.tel{display:none}
-.hero .wrap,.two,.calc{grid-template-columns:1fr}.steps,.stats{grid-template-columns:1fr 1fr}
-section{padding:60px 0}.top span:last-child{display:none}}
+section{padding:64px 0}
+nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--ink);flex-direction:column;padding:20px 24px;border-bottom:1px solid var(--line);margin:0}
+nav.open{display:flex}.burger{display:block}.hc,header .btn{display:none}
+header .wrap{height:68px}header{background:var(--ink)}
+.hero{min-height:0;padding-top:110px}.hg,.two,.calc,.cg,.gf,.vids{grid-template-columns:1fr}
+.facts,.steps{grid-template-columns:1fr 1fr}.fact{border-bottom:1px solid rgba(255,255,255,.14)}
+.step{border-bottom:1px solid var(--line)}
+.gal{grid-template-columns:repeat(2,1fr);gap:10px}.offers{grid-template-columns:1fr}
+.prow{grid-template-columns:1fr}
+.mbar{display:grid;grid-template-columns:1fr 1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:120;background:var(--ink);border-top:1px solid var(--line)}
+.mbar a,.mbar button{padding:14px 6px;text-align:center;font-weight:600;font-size:14px;background:none;border:0;color:#fff;border-right:1px solid var(--line);cursor:pointer;font-family:inherit}
+.mbar button{background:var(--ac);border:0}
+body{padding-bottom:50px}}
+@media(max-width:560px){.grid,.adv{grid-template-columns:1fr}.wrap{padding:0 18px}.cta .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
-</head>
-<body>
-<div class="top"><div class="wrap"><span>📍 Набережные Челны, проезд Тозелеш, д. 28, офис 4</span><span>Пн–Пт 8:00–17:00 (мск), обед 12:00–13:00</span></div></div>
-<header><div class="wrap">
-<a class="logo" href="#">НАД<b>АВТО</b></a>
-<nav id="nav">
-<a href="#services">Услуги</a><a href="#production">Производство</a><a href="#promo">Акции</a><a href="#portfolio">Портфолио</a><a href="#prices">Прайсы</a><a href="#faq">Инфо</a><a href="#contacts">Контакты</a>
-</nav>
-<a class="tel" href="tel:+79872861663">+7 987 286-16-63</a>
-<button class="burger" onclick="nav.classList.toggle('open')">☰</button>
+</head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<radialGradient id="rim" cx=".38" cy=".32" r=".85"><stop offset="0" stop-color="#f4f4f4"/><stop offset=".55" stop-color="#b3b3b3"/><stop offset="1" stop-color="#6e6e6e"/></radialGradient>
+<symbol id="wheel" viewBox="0 0 100 100">
+<circle cx="50" cy="50" r="48" fill="#111"/>
+<circle cx="50" cy="50" r="43" fill="none" stroke="#303030" stroke-width="9" stroke-dasharray="8 4.28"/>
+<circle cx="50" cy="50" r="37" fill="#1c1c1c"/>
+<circle cx="50" cy="50" r="31" fill="url(#rim)"/>
+<circle cx="50" cy="50" r="27" fill="#8d8d8d" stroke="#5a5a5a" stroke-width="1"/>
+<circle cx="50" cy="50" r="24" fill="url(#rim)"/>
+<g fill="#3b3b3b" stroke="#e6e6e6" stroke-width=".8"><circle cx="66" cy="50" r="2.4"/><circle cx="62.94" cy="59.41" r="2.4"/><circle cx="54.94" cy="65.22" r="2.4"/><circle cx="45.06" cy="65.22" r="2.4"/><circle cx="37.06" cy="59.41" r="2.4"/><circle cx="34" cy="50" r="2.4"/><circle cx="37.06" cy="40.59" r="2.4"/><circle cx="45.06" cy="34.78" r="2.4"/><circle cx="54.94" cy="34.78" r="2.4"/><circle cx="62.94" cy="40.59" r="2.4"/></g>
+<circle cx="50" cy="50" r="9" fill="#444" stroke="#d8d8d8" stroke-width="1.2"/>
+<circle cx="50" cy="50" r="3.2" fill="#ff5d02"/>
+</symbol></defs></svg>
+
+<header id="hd"><div class="wrap">
+<a class="logo" href="#"><i></i>НАДАВТО</a>
+<nav id="nav"><a href="#services">Услуги</a><a href="#process">Производство</a><a href="#portfolio">Портфолио</a><a href="#prices">Прайсы</a><a href="#prices">Акции</a><a href="#contacts">Контакты</a></nav>
+<div class="hc"><b>+7 987 286-16-63</b><span>Пн–Пт 8:00–17:00 (мск)</span></div>
+<button class="btn" data-modal>Заказать звонок</button>
+<button class="burger" aria-label="Меню" onclick="nav.classList.toggle('open')">☰</button>
 </div></header>
 
-<section class="hero"><div class="wrap">
+<section class="hero" style="padding-bottom:0"><div class="wrap">
+<div class="hg">
 <div>
-<span class="tag">Сертифицированное производство</span>
-<h1>Капремонт <span>КАМАЗ</span> «под новый» за 30 дней</h1>
-<p>Восстановительный ремонт и модернизация грузовиков. Машина с капремонтом — в два и более раза дешевле нового серийного КАМАЗа. Гарантия до 6 месяцев.</p>
-<div class="cta"><a class="btn p" href="#calc">Рассчитать стоимость →</a><a class="btn g" href="#services">Все услуги</a><button class="btn g" onclick="md.classList.add('on')">Заказать звонок</button></div>
+<div class="eyebrow">Сертифицированное производство · Набережные Челны</div>
+<h1>Капитальный ремонт КАМАЗ <em>«под новый»</em> за 30 дней</h1>
+<p class="s">Восстановительный ремонт и модернизация грузовиков в собственном цехе. Машина с капремонтом — в два и более раза дешевле нового серийного КАМАЗа.</p>
+<div class="cta"><a class="btn" href="#calc">Рассчитать стоимость</a><a class="btn ghost" href="https://wa.me/79600733651" target="_blank" rel="noopener">Написать в WhatsApp</a></div>
 </div>
-<div class="hs" id="hs"><img src="media/hero1.webp" alt="Цех капитального ремонта КАМАЗ" class="on" fetchpriority="high"><img src="media/hero2.webp" alt="КАМАЗ 45143 после капитального ремонта"><img src="media/hero3.webp" alt="КАМАЗ 65115 ломовоз после капремонта"><div class="dots"><i class="on"></i><i></i><i></i></div></div>
-</div>
-<div class="wrap"><div class="stats">
-<div class="stat"><b data-n="14">0</b><span>видов услуг</span></div>
-<div class="stat"><b data-n="30">0</b><span>дней — срок капремонта 6×4</span></div>
-<div class="stat"><b data-n="6">0</b><span>мес. гарантии (до 30 тыс. км)</span></div>
-<div class="stat"><b data-n="70">0+</b><span>готовых машин в галерее</span></div>
+<form class="form lead-form">
+<h3>Получить расчёт</h3><p class="m">Оставьте номер — менеджер перезвонит в рабочее время и уточнит задачу.</p>
+<input name="n" placeholder="Ваше имя" required autocomplete="name">
+<input name="p" type="tel" placeholder="+7 ___ ___-__-__" required autocomplete="tel">
+<label class="ck"><input type="checkbox" required checked>Согласен на обработку персональных данных</label>
+<button class="btn wide">Отправить заявку</button>
+</form>
+</div></div>
+<div class="wrap" style="padding:0"><div class="facts">
+<div class="fact"><b>30 дней</b><span>срок капремонта 6×4</span></div>
+<div class="fact"><b>до 6 мес.</b><span>гарантия, до 30 тыс. км</span></div>
+<div class="fact"><b>50%</b><span>предоплата, остаток при выдаче</span></div>
+<div class="fact"><b>14 услуг</b><span>сертификаты на все виды работ</span></div>
 </div></div>
 </section>
 
-<div class="mq"><div><span>Капремонт КАМАЗ</span><i>✦</i><span>Гарантия до 6 месяцев</span><i>✦</i><span>30 дней под ключ</span><i>✦</i><span>Переоборудование</span><i>✦</i><span>Ремонт кабин и рам</span><i>✦</i><span>Отгрузка по России</span><i>✦</i><span>Капремонт КАМАЗ</span><i>✦</i><span>Гарантия до 6 месяцев</span><i>✦</i><span>30 дней под ключ</span><i>✦</i><span>Переоборудование</span><i>✦</i><span>Ремонт кабин и рам</span><i>✦</i><span>Отгрузка по России</span><i>✦</i></div></div>
+<div class="mq"><div id="mq"></div></div>
 
-<section id="services"><div class="wrap">
-<span class="tag">Услуги</span><h2>Всё для вашего КАМАЗа</h2>
+<section id="services" class="light"><div class="wrap">
+<div class="eyebrow">01 / Услуги</div><h2>Всё для вашего КАМАЗа</h2>
 <p class="lead">От замены КПП до полного капремонта и переоборудования под вашу задачу — в собственном цехе.</p>
 <div class="grid" id="sg"></div>
 </div></section>
 
-<section id="production" class="alt"><div class="wrap">
-<span class="tag">Производство</span><h2>Как мы работаем</h2>
-<p class="lead">Прозрачный порядок: договор, предоплата, приёмка, расчёт.</p>
+<section id="process"><div class="wrap">
+<div class="eyebrow">02 / Производство</div><h2>Как мы работаем</h2>
+<p class="lead">Прозрачный порядок: договор, предоплата, ремонт, приёмка.</p>
 <div class="steps rv">
-<div class="step"><h3>Договор</h3><p>Заключаем договор, можно отправить по факсу или почте.</p></div>
-<div class="step"><h3>Предоплата 50%</h3><p>Любая форма оплаты. Остаток — при получении машины.</p></div>
-<div class="step"><h3>Ремонт</h3><p>30 дней для 6×4, до 45 дней для вездеходов.</p></div>
-<div class="step"><h3>Приёмка</h3><p>Расчёт, документы, возможна доставка в ваш город.</p></div>
-</div>
-<div class="two" style="margin-top:56px">
-<div class="card"><h3>В капремонт входит</h3><ul class="list" style="margin-top:12px">
-<li>Ремонт или замена рамы</li><li>Ремонт или установка кабины</li><li>Замена электропроводки</li><li>Тормозная система и подвеска</li><li>Рулевое управление</li><li>Капремонт двигателя и КПП</li><li>Капремонт переднего и заднего мостов</li></ul></div>
-<div class="card"><h3>Комплектация</h3><p style="color:var(--mut);margin:12px 0">В основе — ремфонд: машину разбирают до рамы, красят и ставят заказанные узлы. Мелочёвка (тормоза, проводка, АКБ, РТИ) — как правило новая.</p>
-<h3 style="margin-top:20px">По желанию</h3><div class="cities" style="margin-top:12px"><span>Делитель</span><span>ЯМЗ двигатель и КПП</span><span>Шины 280</span><span>Усиление подвески</span><span>Новая кабина / кузов</span><span>Спальник</span><span>Гидровыводы</span><span>Наращивание бортов</span></div></div>
+<div class="step"><i>01</i><h3>Договор</h3><p>Заключаем договор, его можно отправить по факсу или почте.</p></div>
+<div class="step"><i>02</i><h3>Предоплата 50%</h3><p>Любая форма оплаты. Остаток — при получении машины.</p></div>
+<div class="step"><i>03</i><h3>Ремонт</h3><p>30 дней для 6×4, до 45 дней для вездеходов.</p></div>
+<div class="step"><i>04</i><h3>Приёмка</h3><p>Расчёт и документы. Возможна доставка в ваш город.</p></div>
 </div></div></section>
 
-<section id="calc"><div class="wrap">
-<span class="tag">Калькулятор</span><h2>Расчёт стоимости ремонта</h2>
-<p class="lead">Отметьте нужные работы — менеджер перезвонит и назовёт точную цену.</p>
+<section class="light"><div class="wrap">
+<div class="eyebrow">03 / Состав работ</div><h2>Что входит в капремонт</h2><p class="lead">&nbsp;</p>
+<div class="two">
+<div class="panel rv"><h3>Работы</h3><ul class="spec"><li>Ремонт или замена рамы</li><li>Ремонт или установка кабины</li><li>Замена электропроводки</li><li>Ремонт тормозной системы и подвески</li><li>Ремонт рулевого управления</li><li>Капремонт двигателя и КПП</li><li>Капремонт переднего и заднего мостов</li></ul></div>
+<div class="panel rv"><h3>Комплектация</h3><p style="color:#5b5f62;margin-bottom:22px">В основе — б/у машина (ремфонд). Её разбирают до рамы, красят и устанавливают заказанные узлы. Кабина, двигатель, кузов, КПП и мосты — с капремонта, мелочёвка (тормоза, проводка, АКБ, РТИ) как правило новая.</p>
+<h3 style="font-size:22px">По желанию заказчика</h3><div class="tags"><span>Делитель</span><span>Двигатель и КПП ЯМЗ</span><span>Шины 280</span><span>Усиление подвески</span><span>Новая кабина или кузов</span><span>Спальник</span><span>Гидровыводы на прицеп</span><span>Наращивание бортов</span></div></div>
+</div></div></section>
+
+<section class="dark2"><div class="wrap">
+<div class="eyebrow">04 / Преимущества</div><h2>Почему НАДАВТО</h2><p class="lead">Собственный цех, сертификаты на все виды работ и гарантия на результат.</p>
+<div class="adv">
+<div class="ad rv"><img loading="lazy" src="media/hero1.webp" alt=""><i>01</i><h3>Профессионализм</h3><p>Специалисты с многолетним опытом диагностики и сервиса.</p></div>
+<div class="ad rv"><img loading="lazy" src="media/gal02.webp" alt=""><i>02</i><h3>Скорость</h3><p>Современное оборудование и опытный персонал.</p></div>
+<div class="ad rv"><img loading="lazy" src="media/gal04.webp" alt=""><i>03</i><h3>Стоимость</h3><p>Скидки постоянным клиентам.</p></div>
+<div class="ad rv"><img loading="lazy" src="media/gal05.webp" alt=""><i>04</i><h3>Качество</h3><p>Сертификаты на все виды работ.</p></div>
+<div class="ad rv"><img loading="lazy" src="media/gal09.webp" alt=""><i>05</i><h3>Гарантия</h3><p>До 6 месяцев или 30 тыс. км на все виды работ.</p></div>
+</div></div></section>
+
+<section id="calc" class="light"><div class="wrap">
+<div class="eyebrow">05 / Калькулятор</div><h2>Расчёт стоимости ремонта</h2>
+<p class="lead">Отметьте нужные работы — менеджер подготовит расчёт и свяжется с вами.</p>
 <div class="calc">
-<div><div class="chips" id="chips"></div>
-<p style="color:var(--mut);margin-top:20px;font-size:14px">Демо: цены на сайте не публикуются, окончательную стоимость определяет менеджер.</p></div>
-<div class="res"><p style="color:var(--mut)">Выбрано работ</p><b id="cnt">0</b>
-<input placeholder="Ваше имя"><input placeholder="Телефон" type="tel">
-<button class="btn p" style="width:100%;justify-content:center" onclick="alert('Демо: заявка не отправляется')">Получить расчёт</button></div>
+<div class="panel"><h3 style="font-size:22px">Что нужно отремонтировать</h3><div class="chips" id="chips"></div><p class="note">Цены на сайте не публикуются: итоговую стоимость определяет менеджер после уточнения задачи.</p></div>
+<form class="cform lead-form"><h3>Отправить расчёт</h3><span class="cnt">Выбрано работ: <b id="cnt">0</b></span>
+<input placeholder="Ваше имя" required><input type="tel" placeholder="Телефон" required>
+<label class="ck"><input type="checkbox" required checked>Согласен на обработку персональных данных</label>
+<button class="btn wide">Получить расчёт</button></form>
 </div></div></section>
 
-<section class="alt adv"><div class="wrap">
-<span class="tag">Преимущества</span><h2>Почему НАДАВТО</h2><p class="lead" style="margin-top:16px">Собственный цех, сертификаты на все виды работ и гарантия на результат.</p>
-<div class="bento">
-<div class="ad rv"><img loading="lazy" src="media/hero1.webp" alt=""><b>01</b><h3>Профессионализм</h3><p>Специалисты с многолетним опытом диагностики и сервиса. Работаем в собственном цехе.</p></div>
-<div class="ad rv"><img loading="lazy" src="media/gal02.webp" alt=""><b>02</b><h3>Скорость</h3><p>Современное оборудование и опытный персонал: капремонт «под новый» за 30 дней.</p></div>
-<div class="ad rv"><img loading="lazy" src="media/gal04.webp" alt=""><b>03</b><h3>Стоимость</h3><p>Скидки постоянным клиентам. Машина с капремонтом — в 2 и более раза дешевле нового.</p></div>
-<div class="ad rv"><img loading="lazy" src="media/gal05.webp" alt=""><b>04</b><h3>Качество</h3><p>Сертификаты на все виды работ, контроль на каждом этапе.</p></div>
-<div class="ad rv"><img loading="lazy" src="media/gal09.webp" alt=""><b>05</b><h3>Гарантия</h3><p>До 6 месяцев или 30 тыс. км на все виды работ.</p></div>
+<section id="video"><div class="wrap">
+<div class="eyebrow">06 / Видео</div><h2>Производство вживую</h2>
+<p class="lead">Ролики из нашего цеха: подготовка шасси, отгрузка готовых машин.</p>
+<div class="vids">
+<div class="vc vbig rv"><video controls preload="none" poster="media/hero1.webp" src="media/v1.mp4"></video><span>Капремонт КАМАЗ</span></div>
+<div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v3.mp4" data-auto></video><span>Шасси КАМАЗ-4310 к капремонту</span></div>
+<div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v2.mp4" data-auto></video><span>Отправка после ремонта</span></div>
+<div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v4.mp4" data-auto></video><span>Кузов КАМАЗ-65115</span></div>
 </div></div></section>
 
-<section id="video"><div class="wrap"><span class="tag">Видео</span><h2>Производство вживую</h2><p class="lead">Ролики из нашего цеха: подготовка шасси, отгрузка готовых машин.</p><div class="vids"><div class="vc vbig rv"><video controls preload="none" poster="media/hero1.webp" src="media/v1.mp4"></video><span>Капремонт КАМАЗ</span></div><div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v3.mp4" data-auto></video><span>Шасси КАМАЗ-4310 к капремонту</span></div><div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v2.mp4" data-auto></video><span>Отправка после ремонта</span></div><div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v4.mp4" data-auto></video><span>Кузов КАМАЗ-65115</span></div></div></div></section>
+<section id="portfolio" class="light"><div class="wrap">
+<div class="eyebrow">07 / Портфолио</div><h2>Наши работы</h2>
+<p class="lead">Реальные КАМАЗы после капитального ремонта в нашем цехе. Нажмите на фото, чтобы открыть его крупно.</p>
+<div class="gal" id="gal"></div><div class="gmore"><button class="btn ghost" id="gm"></button></div>
+</div></section>
 
-<section id="promo"><div class="wrap">
-<span class="tag">Акции</span><h2>Выгодные предложения</h2><p class="lead">Условия уточняйте у менеджера — демо без конкретных цифр.</p>
-<div class="grid">
-<div class="card promo rv"><h3>Скидки постоянным клиентам</h3><p>Для тех, кто обращается повторно или ремонтирует парк машин.</p></div>
-<div class="card promo rv"><h3>Ремонт в лизинг</h3><p>Капремонт КАМАЗ с возможностью лизинга.</p></div>
-<div class="card promo rv"><h3>Машины с капремонта в наличии</h3><p>Готовые автомобили и сборка под заказ.</p></div>
+<section id="prices"><div class="wrap">
+<div class="eyebrow">08 / Прайсы и предложения</div><h2>Каталог и цены</h2>
+<p class="lead">Ориентировочные цены на машины с капремонтом, в наличии и под заказ. Актуальный прайс пришлём по запросу.</p>
+<div>
+<div class="prow"><h3>А/м КамАЗ с капремонта</h3><span>в наличии и под заказ</span><button class="btn ghost" data-modal>Узнать цену</button></div>
+<div class="prow"><h3>Мосты</h3><span>с капремонта</span><button class="btn ghost" data-modal>Узнать цену</button></div>
+<div class="prow"><h3>Защитный тент оператора</h3><span>для самосвалов</span><button class="btn ghost" data-modal>Узнать цену</button></div>
+<div class="prow"><h3>Ось балансира КАМАЗ</h3><span>запчасти</span><button class="btn ghost" data-modal>Узнать цену</button></div>
+</div>
+<div class="offers">
+<div class="of rv"><h3>Скидки постоянным клиентам</h3><p>Для тех, кто обращается повторно или ремонтирует парк машин.</p></div>
+<div class="of rv"><h3>Ремонт в лизинг</h3><p>Капитальный ремонт КАМАЗ с возможностью лизинга.</p></div>
+<div class="of rv"><h3>Машины в наличии</h3><p>Готовые автомобили после капремонта и сборка под заказ.</p></div>
 </div></div></section>
 
-<section id="portfolio" class="alt"><div class="wrap"><span class="tag">Портфолио</span><h2>Наши работы</h2><p class="lead">Реальные КАМАЗы после капитального ремонта в нашем цехе. Нажмите на фото, чтобы открыть крупно.</p><div class="gal" id="gal"></div><div class="gmore"><button class="btn g" id="gm"></button></div></div></section>
-
-<section id="faq"><div class="wrap" style="max-width:820px">
-<span class="tag">Инфо</span><h2>Частые вопросы</h2><p class="lead">&nbsp;</p>
+<section class="light"><div class="wrap gf">
+<div><div class="eyebrow">09 / География</div><h2>Отгружаем по всей России</h2><p class="lead">Доставка в город заказчика при полной оплате, перегон — за дополнительную плату.</p>
+<div class="cities"><span>Башкирия</span><span>Казахстан</span><span>Саратов</span><span>Бузулук</span><span>Оренбург</span><span>Кемерово</span><span>Вологда</span><span>Нижний Новгород</span><span>Москва</span><span>Астрахань</span><span>Челябинск</span><span>и ещё 25+ городов</span></div></div>
+<div id="faq"><div class="eyebrow">10 / Вопросы</div><h2>Частые вопросы</h2><p class="lead" style="margin-bottom:28px">&nbsp;</p>
 <details><summary>Сколько длится капремонт?</summary><p>30 дней для машин с колёсной формулой 6×4, до 45 дней для вездеходов.</p></details>
 <details><summary>Какая гарантия?</summary><p>До 30 тыс. км пробега или до 6 месяцев, на все виды работ.</p></details>
 <details><summary>Как оплатить?</summary><p>Предоплата 50% при заключении договора, остаток при получении готовой машины. Форма оплаты любая.</p></details>
 <details><summary>Можно ли доставить машину в мой город?</summary><p>Да, при полной оплате. Перегон оплачивается дополнительно.</p></details>
-<details><summary>Из чего собирают машину?</summary><p>За основу берут б/у машину (ремфонд), разбирают до рамы, красят и ставят заказанные узлы. Кабина, двигатель, кузов, КПП и мосты — с капремонта, мелочёвка обычно новая.</p></details>
-</div></section>
-
-<section id="prices" class="alt"><div class="wrap">
-<span class="tag">Прайсы</span><h2>Каталог и прайс-листы</h2><p class="lead">Ориентировочные цены на машины с капремонтом — под заказ и в наличии.</p>
-<div class="grid">
-<a class="card pr" href="#contacts"><h3>А/м КамАЗ с капремонта</h3><em>→</em></a>
-<a class="card pr" href="#contacts"><h3>Мосты</h3><em>→</em></a>
-<a class="card pr" href="#contacts"><h3>Защитный тент оператора</h3><em>→</em></a>
-<a class="card pr" href="#contacts"><h3>Ось балансира КАМАЗ</h3><em>→</em></a>
+<details><summary>Из чего собирают машину?</summary><p>За основу берут б/у машину (ремфонд), разбирают до рамы, красят и ставят заказанные узлы.</p></details>
 </div></div></section>
 
-<section id="geo"><div class="wrap">
-<span class="tag">География</span><h2>Отгружаем по всей России</h2><p class="lead">Доставка в город заказчика при полной оплате, перегон за дополнительную плату.</p>
-<div class="cities"><span>Башкирия</span><span>Казахстан</span><span>Саратов</span><span>Бузулук</span><span>Оренбург</span><span>Кемерово</span><span>Вологда</span><span>Нижний Новгород</span><span>Москва</span><span>Астрахань</span><span>Челябинск</span><span>и ещё 25+ городов</span></div>
+<section id="contacts"><div class="wrap cg">
+<div><div class="eyebrow">11 / Контакты</div><h2>Обсудим ваш КАМАЗ</h2><p class="lead">Позвоните или напишите — ответим на любой вопрос по ремонту и сроку.</p>
+<div class="cl">
+<div><small>Телефоны</small><b>+7 987 286-16-63</b><br><b>+7 917 238-46-18</b></div>
+<div><small>WhatsApp</small><b>+7 960 073-36-51</b></div>
+<div><small>Email</small><b>nadavto2014@yandex.ru</b></div>
+<div><small>Адрес</small><b>Набережные Челны, проезд Тозелеш, д. 28, офис 4</b></div>
+<div><small>Режим работы</small><b>Пн–Пт 8:00–17:00 (мск), обед 12:00–13:00</b></div>
+</div>
+<div class="msg"><a class="btn" href="tel:+79872861663">Позвонить</a><a class="btn ghost" href="https://wa.me/79600733651" target="_blank" rel="noopener">WhatsApp</a></div></div>
+<form class="form lead-form"><h3>Оставить заявку</h3><p class="m">Опишите задачу — менеджер свяжется с вами в рабочее время.</p>
+<input placeholder="Ваше имя" required><input type="tel" placeholder="Телефон" required>
+<select><option>Капитальный ремонт КАМАЗ</option><option>Ремонт кабины или рамы</option><option>Переоборудование</option><option>Машина с капремонта</option><option>Другое</option></select>
+<textarea rows="3" placeholder="Комментарий"></textarea>
+<label class="ck"><input type="checkbox" required checked>Согласен на обработку персональных данных</label>
+<button class="btn wide">Отправить</button></form>
 </div></section>
 
-<section id="contacts" class="contact"><div class="wrap two">
-<div><span class="tag">Контакты</span><h2>Оставьте заявку</h2><p class="lead">Перезвоним в рабочее время и ответим на любой вопрос по ремонту.</p>
-<div class="cl"><p>Телефоны<b>+7 987 286-16-63</b><b>+7 917 238-46-18</b></p><p>WhatsApp<b>+7 960 073-36-51</b></p><p>Email<b>nadavto2014@yandex.ru</b></p><p>Адрес<b>Набережные Челны, проезд Тозелеш, д. 28, офис 4</b></p></div></div>
-<form class="card" onsubmit="event.preventDefault();alert('Демо: заявка не отправляется')">
-<h3 style="margin-bottom:16px">Заказать звонок</h3>
-<input placeholder="Имя" required><input placeholder="Телефон" type="tel" required>
-<select><option>Капремонт КАМАЗ</option><option>Ремонт кабины / рамы</option><option>Переоборудование</option><option>Другое</option></select>
-<textarea rows="3" placeholder="Комментарий"></textarea>
-<button class="btn p" style="width:100%;justify-content:center">Отправить</button>
-<p style="font-size:12px;color:var(--mut);margin-top:10px">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
-</form></div></section>
+<footer><div class="wrap"><span>© ООО «НПО «НАДАВТО», Набережные Челны</span><span>Демо-версия редизайна · заявки не отправляются</span></div></footer>
 
-<footer><div class="wrap"><span>© ООО «НПО «НАДАВТО», Набережные Челны</span><span>Демо-версия редизайна</span></div></footer>
-<a class="float" href="tel:+79872861663" aria-label="Позвонить">📞</a>
-<button class="top-btn" id="up" aria-label="Наверх" onclick="scrollTo({top:0})">↑</button>
-<div class="modal" id="md" onclick="if(event.target===md)md.classList.remove('on')">
-<form class="card" onsubmit="event.preventDefault();md.classList.remove('on');alert('Демо: заявка не отправляется')">
-<h3 style="margin-bottom:16px">Заказать звонок</h3>
-<input placeholder="Имя" required><input placeholder="Телефон" type="tel" required>
-<button class="btn p" style="width:100%;justify-content:center">Перезвоните мне</button></form></div>
-
-<div class="bar" id="bar"></div><div class="lb" id="lb"><button class="x">✕</button><button class="pv">‹</button><button class="nx">›</button><div style="text-align:center"><img id="lbi" alt=""><p id="lbt"></p></div></div>
+<div class="mbar"><a href="tel:+79872861663">Позвонить</a><a href="https://wa.me/79600733651" target="_blank" rel="noopener">WhatsApp</a><button data-modal>Заявка</button></div>
+<div class="modal" id="md"><form class="form lead-form"><h3>Заказать звонок</h3><p class="m">Перезвоним в рабочее время.</p><input placeholder="Ваше имя" required><input type="tel" placeholder="Телефон" required><label class="ck"><input type="checkbox" required checked>Согласен на обработку персональных данных</label><button class="btn wide">Перезвоните мне</button></form></div>
+<div class="lbx" id="lb"><button class="x" aria-label="Закрыть">✕</button><button class="pv" aria-label="Назад">‹</button><button class="nx" aria-label="Вперёд">›</button><div><img id="lbi" alt=""><p id="lbt"></p></div></div>
 <script src="media/gallery.js"></script>
 <script>
-const S=[["Ремонт в лизинг автомобилей КАМАЗ","📄"],["Переоборудование автомобилей КамАЗ","🔧"],["Переоборудование в самосвалы карьерные и с/х","🚛"],["Установка гидроманипуляторов (КМУ)","🏗"],["Установка двигателей ЯМЗ","⚙️"],["Ремонт кабин а/м КАМАЗ","🚘"],["Ремонт рам а/м КАМАЗ","📐"],["Ремонт грузовых платформ","📦"],["Ремонт аварийных а/м КАМАЗ","💥"],["Гидрофикация","💧"],["Наращивание бортов","⬆️"],["Ремонт спецтехники","🚜"],["Замена КПП","🕹"],["Капремонт двигателей КАМАЗ","🔩"]];
+const S=["Ремонт в лизинг автомобилей КАМАЗ","Переоборудование автомобилей КамАЗ","Переоборудование в самосвалы карьерные и с/х","Установка гидроманипуляторов (КМУ)","Установка двигателей ЯМЗ","Ремонт кабин а/м КАМАЗ","Ремонт рам а/м КАМАЗ","Ремонт грузовых платформ","Ремонт аварийных а/м КАМАЗ","Гидрофикация","Наращивание бортов","Ремонт спецтехники","Замена КПП","Капремонт двигателей КАМАЗ"];
 const IM=[["gal03",""],["gal12",""],["gal19",""],["gal11",""],["hero1","20% 50%"],["gal14",""],["gal08",""],["gal17",""],["gal24",""],["gal16",""],["gal13",""],["gal10",""],["hero1","80% 50%"],["hero1","50% 30%"]];
-sg.innerHTML=S.map((s,i)=>{const e=IM[i],x=e[0].startsWith("hero")?"webp":"webp";return `<a href="#contacts" class="card sc rv"><div class="im"><img loading="lazy" src="media/${e[0]}.${x}" style="object-position:${e[1]||"50% 50%"}" alt="${s[0]}"><span class="n">${String(i+1).padStart(2,0)}</span></div><div class="bd"><h3>${s[0]}</h3><span class="more">Подробнее →</span></div></a>`}).join("");
-const W=["Кабина","ДВС","Рама","Передняя ходовая","КПП","Задняя тележка","Кузов"];
+sg.innerHTML=S.map((t,i)=>`<a href="#contacts" class="sc rv"><div class="im"><img loading="lazy" src="media/${IM[i][0]}.webp" style="object-position:${IM[i][1]||"50% 50%"}" alt="${t}"><span class="n">${String(i+1).padStart(2,0)}</span></div><div class="bd"><h3>${t}</h3><span class="more">Оставить заявку</span></div></a>`).join("");
+const wh='<svg viewBox="0 0 100 100"><use href="#wheel"/></svg>',T=["Капремонт КАМАЗ","Гарантия до 6 месяцев","30 дней под ключ","Переоборудование","Ремонт кабин и рам","Отгрузка по России"];
+mq.innerHTML=[0,1].map(()=>T.map(t=>`<span>${t}</span>${wh}`).join("")).join("");
+const W=["Кабина","Двигатель","Рама","Передняя ходовая","КПП","Задняя тележка","Кузов"];
 chips.innerHTML=W.map(w=>`<span class="chip">${w}</span>`).join("");
 chips.onclick=e=>{if(e.target.classList.contains("chip")){e.target.classList.toggle("on");cnt.textContent=chips.querySelectorAll(".on").length}};
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll(".rv").forEach(el=>io.observe(el));
-const so=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,n=+el.dataset.n,plus=el.textContent.includes("+");let c=0;const t=setInterval(()=>{c+=Math.ceil(n/30);if(c>=n){c=n;clearInterval(t)}el.textContent=c+(plus?"+":"")},35);so.unobserve(el)}));
-document.querySelectorAll("[data-n]").forEach(el=>so.observe(el));
-nav.onclick=()=>nav.classList.remove("open");
-addEventListener("scroll",()=>up.style.display=scrollY>600?"block":"none");
-addEventListener("keydown",e=>e.key==="Escape"&&md.classList.remove("on"));
-gal.innerHTML=GALLERY.map((g,i)=>`<div class="gi rv${i>=8?" hid":""}" data-i="${i}"><img loading="lazy" src="media/${g.f}" alt="${g.t}"><div>${g.t}</div></div>`).join("");
-let gOpen=false;const gSet=()=>{gal.querySelectorAll(".gi").forEach((el,i)=>el.classList.toggle("hid",!gOpen&&i>=8));gm.textContent=gOpen?"Свернуть":"Показать все "+GALLERY.length+" фото"};gm.onclick=()=>{gOpen=!gOpen;gSet();if(!gOpen)gal.scrollIntoView({behavior:"smooth",block:"start"})};gSet();
-gal.querySelectorAll(".rv").forEach(el=>io.observe(el));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+const rvAll=()=>document.querySelectorAll(".rv:not(.in)").forEach(el=>io.observe(el));
+gal.innerHTML=GALLERY.map((g,i)=>`<div class="gi rv" data-i="${i}"><img loading="lazy" src="media/${g.f}" alt="${g.t}"><div>${g.t}</div></div>`).join("");rvAll();
+let gOpen=false;const gSet=()=>{gal.querySelectorAll(".gi").forEach((el,i)=>el.classList.toggle("hid",!gOpen&&i>=8));gm.textContent=gOpen?"Свернуть":"Показать все "+GALLERY.length+" фото"};
+gm.onclick=()=>{gOpen=!gOpen;gSet();if(!gOpen)gal.scrollIntoView({behavior:"smooth",block:"start"})};gSet();
 let cur=0;const show=i=>{cur=(i+GALLERY.length)%GALLERY.length;lbi.src="media/"+GALLERY[cur].f;lbt.textContent=GALLERY[cur].t;lb.classList.add("on")};
 gal.onclick=e=>{const g=e.target.closest(".gi");if(g)show(+g.dataset.i)};
 lb.querySelector(".x").onclick=()=>lb.classList.remove("on");lb.querySelector(".pv").onclick=()=>show(cur-1);lb.querySelector(".nx").onclick=()=>show(cur+1);
 lb.onclick=e=>{if(e.target===lb)lb.classList.remove("on")};
-addEventListener("keydown",e=>{if(!lb.classList.contains("on"))return;if(e.key==="Escape")lb.classList.remove("on");if(e.key==="ArrowLeft")show(cur-1);if(e.key==="ArrowRight")show(cur+1)});
-const hi=[...hs.querySelectorAll("img")],hd=[...hs.querySelectorAll(".dots i")];let hc=0;
-const go=n=>{hi[hc].classList.remove("on");hd[hc].classList.remove("on");hc=n;hi[hc].classList.add("on");hd[hc].classList.add("on")};
-hd.forEach((d,i)=>d.onclick=()=>go(i));setInterval(()=>go((hc+1)%hi.length),5500);
+addEventListener("keydown",e=>{if(e.key==="Escape"){lb.classList.remove("on");md.classList.remove("on")}if(lb.classList.contains("on")){if(e.key==="ArrowLeft")show(cur-1);if(e.key==="ArrowRight")show(cur+1)}});
 const vo=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?e.target.play().catch(()=>{}):e.target.pause()),{threshold:.4});
 document.querySelectorAll("video[data-auto]").forEach(v=>vo.observe(v));
-addEventListener("scroll",()=>{bar.style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+"%";document.querySelector("header").classList.toggle("sm",scrollY>80)});</script>
+document.querySelectorAll("[data-modal]").forEach(b=>b.onclick=()=>md.classList.add("on"));
+md.onclick=e=>{if(e.target===md)md.classList.remove("on")};
+document.querySelectorAll(".lead-form").forEach(f=>f.onsubmit=e=>{e.preventDefault();f.innerHTML='<div class="ok"><b>Заявка принята</b><span style="color:var(--mute)">Это демо: данные никуда не отправляются.</span></div>'});
+nav.onclick=()=>nav.classList.remove("open");
+const sc=()=>hd.classList.toggle("solid",scrollY>40);addEventListener("scroll",sc);sc();
+rvAll();
+</script>
 </body>
 </html>
