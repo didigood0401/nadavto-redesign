@@ -10,6 +10,7 @@
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0e1116">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1116'/%3E%3Cpath d='M14 48V16h8l20 20V16h8v32h-8L22 28v20z' fill='%23ff7a00'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0e1116;--bg2:#151a22;--card:#1a212b;--line:#2a3340;--tx:#e8ecf1;--mut:#8f9bab;--ac:#ff7a00;--ac2:#ffb347;--r:16px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -134,6 +135,45 @@ body{animation:pg .8s ease both}@keyframes pg{from{opacity:0}}
 .lb .x{top:20px;right:20px}.lb .pv{left:20px;top:50%}.lb .nx{right:20px;top:50%}
 .rv:nth-child(2){transition-delay:.08s}.rv:nth-child(3){transition-delay:.16s}.rv:nth-child(4){transition-delay:.24s}
 @media(max-width:900px){.vids{grid-template-columns:1fr}.hs{transform:none}}
+:root{--bl:#3d7bff;--vi:#8b5cf6}
+body{font-family:Manrope,"Segoe UI",system-ui,sans-serif;background:var(--bg) radial-gradient(1100px 600px at 100% 0,rgba(61,123,255,.10),transparent 60%) fixed}
+h1,h2,.logo{font-family:Unbounded,Manrope,sans-serif;letter-spacing:-.01em}
+h1{font-size:clamp(30px,4.8vw,58px)!important;font-weight:800}
+h2{font-size:clamp(24px,3.4vw,40px);font-weight:700}
+h2:after{content:"";display:block;width:64px;height:4px;border-radius:2px;margin-top:16px;background:linear-gradient(90deg,var(--ac),var(--vi))}
+.tag{background:rgba(255,122,0,.12);border:1px solid rgba(255,122,0,.35);padding:6px 14px;border-radius:999px}
+.alt{background:radial-gradient(800px 400px at 0 0,rgba(139,92,246,.14),transparent 60%),radial-gradient(800px 400px at 100% 100%,rgba(61,123,255,.13),transparent 60%),var(--bg2)}
+.hero h1 span{background:linear-gradient(90deg,var(--ac),#ff4d8d 60%,var(--vi));-webkit-background-clip:text;background-clip:text}
+.stat{background:linear-gradient(145deg,rgba(255,122,0,.14),rgba(61,123,255,.10));backdrop-filter:blur(10px)}
+.stat b{font-family:Unbounded,sans-serif;background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.mq{overflow:hidden;border-block:1px solid var(--line);background:linear-gradient(90deg,#1b1207,#0f1320 50%,#1b1207);padding:18px 0}
+.mq div{display:flex;gap:48px;width:max-content;animation:mq 38s linear infinite;font-family:Unbounded,sans-serif;font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.mq span{color:var(--mut)}.mq span:nth-child(3n){color:var(--ac)}.mq i{color:var(--vi);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+.grid{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.sc{padding:0;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,rgba(255,122,0,.5),rgba(61,123,255,.4)) border-box;border:1px solid transparent}
+.sc .im{position:relative;aspect-ratio:16/10;overflow:hidden}
+.sc .im img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}
+.sc .im:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--card),transparent 55%)}
+.sc:hover .im img{transform:scale(1.1)}
+.sc .n{position:absolute;left:14px;top:14px;z-index:2;background:linear-gradient(135deg,var(--ac),#ff4d8d);color:#fff;padding:5px 12px;border-radius:999px;font-weight:800}
+.sc .bd{padding:6px 22px 22px;position:relative;z-index:1}
+.sc h3{font-size:17px;min-height:46px}
+.sc .more{display:inline-block;margin-top:12px;color:var(--ac);font-weight:700;font-size:14px;transition:.3s}
+.sc:hover .more{transform:translateX(6px)}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.ad{position:relative;grid-column:span 2;min-height:340px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;border:1px solid var(--line);isolation:isolate}
+.ad:nth-child(-n+2){grid-column:span 3;min-height:380px}
+.ad img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .9s}
+.ad:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(9,11,15,.96) 8%,rgba(9,11,15,.45) 60%,rgba(255,122,0,.10));transition:.5s}
+.ad:hover img{transform:scale(1.1)}.ad:hover:after{background:linear-gradient(0deg,rgba(9,11,15,.92) 8%,rgba(9,11,15,.2) 70%,rgba(255,122,0,.25))}
+.ad b{position:absolute;top:14px;right:22px;font-family:Unbounded,sans-serif;font-size:64px;font-weight:800;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.35);transition:.4s}
+.ad:hover b{-webkit-text-stroke-color:var(--ac);transform:translateY(-4px)}
+.ad h3{font-size:24px;font-family:Unbounded,sans-serif;margin-bottom:8px}
+.ad p{color:#c9d2de;font-size:15px;max-width:420px}
+.ad h3:before{content:"";display:block;width:36px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--ac),var(--vi));margin-bottom:14px;transition:width .5s}
+.ad:hover h3:before{width:90px}
+@media(max-width:900px){.bento{grid-template-columns:1fr}.ad,.ad:nth-child(-n+2){grid-column:auto;min-height:280px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 @media(max-width:900px){
 nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px;border-bottom:1px solid var(--line)}
@@ -170,6 +210,8 @@ section{padding:60px 0}.top span:last-child{display:none}}
 </div></div>
 </section>
 
+<div class="mq"><div><span>Капремонт КАМАЗ</span><i>✦</i><span>Гарантия до 6 месяцев</span><i>✦</i><span>30 дней под ключ</span><i>✦</i><span>Переоборудование</span><i>✦</i><span>Ремонт кабин и рам</span><i>✦</i><span>Отгрузка по России</span><i>✦</i><span>Капремонт КАМАЗ</span><i>✦</i><span>Гарантия до 6 месяцев</span><i>✦</i><span>30 дней под ключ</span><i>✦</i><span>Переоборудование</span><i>✦</i><span>Ремонт кабин и рам</span><i>✦</i><span>Отгрузка по России</span><i>✦</i></div></div>
+
 <section id="services"><div class="wrap">
 <span class="tag">Услуги</span><h2>Всё для вашего КАМАЗа</h2>
 <p class="lead">От замены КПП до полного капремонта и переоборудования под вашу задачу — в собственном цехе.</p>
@@ -204,13 +246,13 @@ section{padding:60px 0}.top span:last-child{display:none}}
 </div></div></section>
 
 <section class="alt adv"><div class="wrap">
-<span class="tag">Преимущества</span><h2>Почему НАДАВТО</h2><p class="lead">&nbsp;</p>
-<div class="grid">
-<div class="card rv"><div class="ic">🛠</div><h3>Профессионализм</h3><p>Специалисты с многолетним опытом диагностики и сервиса.</p></div>
-<div class="card rv"><div class="ic">⚡</div><h3>Скорость</h3><p>Современное оборудование и опытный персонал.</p></div>
-<div class="card rv"><div class="ic">💰</div><h3>Стоимость</h3><p>Скидки постоянным клиентам.</p></div>
-<div class="card rv"><div class="ic">🏅</div><h3>Качество</h3><p>Сертификаты на все виды работ.</p></div>
-<div class="card rv"><div class="ic">🛡</div><h3>Гарантия</h3><p>Распространяется на все виды работ.</p></div>
+<span class="tag">Преимущества</span><h2>Почему НАДАВТО</h2><p class="lead" style="margin-top:16px">Собственный цех, сертификаты на все виды работ и гарантия на результат.</p>
+<div class="bento">
+<div class="ad rv"><img loading="lazy" src="media/hero1.webp" alt=""><b>01</b><h3>Профессионализм</h3><p>Специалисты с многолетним опытом диагностики и сервиса. Работаем в собственном цехе.</p></div>
+<div class="ad rv"><img loading="lazy" src="media/gal02.webp" alt=""><b>02</b><h3>Скорость</h3><p>Современное оборудование и опытный персонал: капремонт «под новый» за 30 дней.</p></div>
+<div class="ad rv"><img loading="lazy" src="media/gal04.webp" alt=""><b>03</b><h3>Стоимость</h3><p>Скидки постоянным клиентам. Машина с капремонтом — в 2 и более раза дешевле нового.</p></div>
+<div class="ad rv"><img loading="lazy" src="media/gal05.webp" alt=""><b>04</b><h3>Качество</h3><p>Сертификаты на все виды работ, контроль на каждом этапе.</p></div>
+<div class="ad rv"><img loading="lazy" src="media/gal09.webp" alt=""><b>05</b><h3>Гарантия</h3><p>До 6 месяцев или 30 тыс. км на все виды работ.</p></div>
 </div></div></section>
 
 <section id="video"><div class="wrap"><span class="tag">Видео</span><h2>Производство вживую</h2><p class="lead">Ролики из нашего цеха: подготовка шасси, отгрузка готовых машин.</p><div class="vids"><div class="vc vbig rv"><video controls preload="none" poster="media/hero1.webp" src="media/v1.mp4"></video><span>Капремонт КАМАЗ</span></div><div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v3.mp4" data-auto></video><span>Шасси КАМАЗ-4310 к капремонту</span></div><div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v2.mp4" data-auto></video><span>Отправка после ремонта</span></div><div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v4.mp4" data-auto></video><span>Кузов КАМАЗ-65115</span></div></div></div></section>
@@ -273,7 +315,8 @@ section{padding:60px 0}.top span:last-child{display:none}}
 <script src="media/gallery.js"></script>
 <script>
 const S=[["Ремонт в лизинг автомобилей КАМАЗ","📄"],["Переоборудование автомобилей КамАЗ","🔧"],["Переоборудование в самосвалы карьерные и с/х","🚛"],["Установка гидроманипуляторов (КМУ)","🏗"],["Установка двигателей ЯМЗ","⚙️"],["Ремонт кабин а/м КАМАЗ","🚘"],["Ремонт рам а/м КАМАЗ","📐"],["Ремонт грузовых платформ","📦"],["Ремонт аварийных а/м КАМАЗ","💥"],["Гидрофикация","💧"],["Наращивание бортов","⬆️"],["Ремонт спецтехники","🚜"],["Замена КПП","🕹"],["Капремонт двигателей КАМАЗ","🔩"]];
-sg.innerHTML=S.map((s,i)=>`<a href="#contacts" class="card rv"><span class="n">${String(i+1).padStart(2,0)}</span><div class="ic">${s[1]}</div><h3>${s[0]}</h3></a>`).join("");
+const IM=[["gal03",""],["gal12",""],["gal19",""],["gal11",""],["hero1","20% 50%"],["gal14",""],["gal08",""],["gal17",""],["gal24",""],["gal16",""],["gal13",""],["gal10",""],["hero1","80% 50%"],["hero1","50% 30%"]];
+sg.innerHTML=S.map((s,i)=>{const e=IM[i],x=e[0].startsWith("hero")?"webp":"webp";return `<a href="#contacts" class="card sc rv"><div class="im"><img loading="lazy" src="media/${e[0]}.${x}" style="object-position:${e[1]||"50% 50%"}" alt="${s[0]}"><span class="n">${String(i+1).padStart(2,0)}</span></div><div class="bd"><h3>${s[0]}</h3><span class="more">Подробнее →</span></div></a>`}).join("");
 const W=["Кабина","ДВС","Рама","Передняя ходовая","КПП","Задняя тележка","Кузов"];
 chips.innerHTML=W.map(w=>`<span class="chip">${w}</span>`).join("");
 chips.onclick=e=>{if(e.target.classList.contains("chip")){e.target.classList.toggle("on");cnt.textContent=chips.querySelectorAll(".on").length}};
