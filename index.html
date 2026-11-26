@@ -186,9 +186,9 @@ header .wrap{height:68px}header{background:var(--ink)}
 .mbar button{background:var(--ac);border:0}
 body{padding-bottom:50px}}
 @media(max-width:560px){.grid,.adv{grid-template-columns:1fr}.wrap{padding:0 18px}.cta .btn{width:100%}}
-.hp{position:absolute;right:3%;top:125px;width:min(52vw,840px);height:auto;aspect-ratio:4/3;object-fit:contain;filter:contrast(1.08) saturate(1.1) brightness(.95);-webkit-mask-image:radial-gradient(ellipse 76% 74% at 50% 52%,#000 64%,transparent 100%);mask-image:radial-gradient(ellipse 76% 74% at 50% 52%,#000 64%,transparent 100%);z-index:0;animation:hpIn 1.8s ease both}
+.hpw{position:absolute;right:max(24px,calc((100vw - 1280px)/2 + 24px));top:215px;width:min(44vw,620px);aspect-ratio:4/3;z-index:0;border-radius:22px;overflow:hidden;border:1px solid #3d3d3d;box-shadow:0 40px 90px rgba(0,0,0,.65),0 0 0 6px rgba(255,255,255,.03);animation:hpIn 1.4s ease both}.hpw:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(20,21,21,.35) 0%,rgba(20,21,21,0) 25%),linear-gradient(0deg,rgba(20,21,21,.75) 0%,rgba(20,21,21,0) 30%)}.hp{display:block;width:100%;height:100%;object-fit:cover;filter:contrast(1.08) saturate(1.1) brightness(.96)}.hcap{position:absolute;left:16px;bottom:16px;z-index:2;font-family:"PT Mono",monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;background:rgba(20,21,21,.82);border:1px solid #3d3d3d;padding:7px 14px;border-radius:50px;color:#fff}.hcap:before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--ac);margin-right:9px}
 @keyframes hpIn{from{opacity:0;transform:scale(1.05)}}
-.hl{position:absolute;right:6%;top:230px;width:min(46vw,740px);height:min(34vw,540px);background:radial-gradient(closest-side,rgba(255,110,20,.26),rgba(255,93,2,0));filter:blur(28px);z-index:0;pointer-events:none}
+.hl{position:absolute;right:max(0px,calc((100vw - 1280px)/2 - 40px));top:360px;width:min(48vw,700px);height:min(30vw,420px);background:radial-gradient(closest-side,rgba(255,110,20,.20),rgba(255,93,2,0));filter:blur(30px);z-index:0;pointer-events:none}
 .hero .eyebrow{color:#e3e6e9}
 .hero h1{text-shadow:0 2px 22px rgba(0,0,0,.6)}
 .fact{background:rgba(20,21,21,.55)}.fact span{color:#dfe2e5}
@@ -200,7 +200,7 @@ body{padding-bottom:50px}}
 .hform .btn{padding:15px 18px}
 .lead,.step p,.ad p,.of p,.prow span,.fact span,.cl small{font-weight:500}
 .ad p{color:#e1e4e7}.step p,.of p{color:#d3d6da}.eyebrow{color:#d3d6da}.light .eyebrow{color:#555a5e}
-@media(max-width:900px){.hp{width:100%;right:0;top:78px;opacity:.85}.hl{display:none}.hero:before{background:linear-gradient(180deg,rgba(20,21,21,.55),#141515 62%)}.hform{grid-template-columns:1fr}.hero{min-height:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media(max-width:900px){.hpw{position:relative;right:auto;top:auto;width:calc(100% - 36px);margin:84px 18px 0}.hero .wrap:first-of-type{margin-top:24px}.hl{display:none}.hero:before{background:none}.hero{padding-top:0!important}.hform{grid-template-columns:1fr}.hero{min-height:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -225,7 +225,7 @@ body{padding-bottom:50px}}
 <button class="burger" aria-label="Меню" onclick="nav.classList.toggle('open')">☰</button>
 </div></header>
 
-<section class="hero" style="padding-bottom:0"><img class="hp" src="media/gal03.webp" alt="КАМАЗ-45143 после капитального ремонта" fetchpriority="high"><div class="hl"></div><div class="wrap">
+<section class="hero" style="padding-bottom:0"><div class="hpw"><img class="hp" src="media/gal02.webp" alt="КАМАЗ-45143 после капитального ремонта" fetchpriority="high"><span class="hcap">КАМАЗ-45143 · после капремонта</span></div><div class="hl"></div><div class="wrap">
 <div class="hg">
 <div>
 <div class="eyebrow">Сертифицированное производство · Набережные Челны</div>
