@@ -51,7 +51,7 @@ nav a{opacity:.8;transition:.2s}nav a:hover{opacity:1;color:var(--ac)}
 header .btn{padding:11px 24px;font-size:14px}
 .burger{display:none;background:none;border:0;color:#fff;font-size:30px;margin-left:auto;cursor:pointer}
 .hero{position:relative;min-height:900px;padding:170px 0 0;display:flex;flex-direction:column;justify-content:space-between;background:var(--ink);overflow:hidden}
-.hero:before{z-index:1;content:"";position:absolute;inset:0;background:linear-gradient(90deg,#141515 0%,#141515 34%,rgba(20,21,21,.6) 52%,rgba(20,21,21,0) 78%),linear-gradient(180deg,rgba(20,21,21,.88) 0%,rgba(20,21,21,.28) 26%,rgba(20,21,21,0) 44%),linear-gradient(0deg,var(--g1) 0%,rgba(26,26,26,0) 32%)}
+.hero:before{z-index:1;content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#141515 0%,#141515 28%,rgba(20,21,21,0) 50%),linear-gradient(180deg,rgba(20,21,21,.8) 0%,rgba(20,21,21,0) 26%),linear-gradient(0deg,var(--g1) 0%,rgba(26,26,26,0) 26%)}
 .hero .wrap{position:relative;z-index:2;width:100%}.hero h1,.hero p.s{text-shadow:0 2px 18px rgba(0,0,0,.45)}
 .hg{display:block;max-width:590px}
 .hero h1{font-size:clamp(30px,4vw,56px);font-weight:700;margin-bottom:26px}
@@ -186,9 +186,9 @@ header .wrap{height:68px}header{background:var(--ink)}
 .mbar button{background:var(--ac);border:0}
 body{padding-bottom:50px}}
 @media(max-width:560px){.grid,.adv{grid-template-columns:1fr}.wrap{padding:0 18px}.cta .btn{width:100%}}
-.hp{position:absolute;right:0;top:0;width:64%;height:100%;object-fit:cover;object-position:45% 50%;filter:contrast(1.1) saturate(1.12) brightness(.93);z-index:0;animation:hpIn 1.8s ease both}
+.hp{position:absolute;right:3%;top:125px;width:min(52vw,840px);height:auto;aspect-ratio:4/3;object-fit:contain;filter:contrast(1.08) saturate(1.1) brightness(.95);-webkit-mask-image:radial-gradient(ellipse 76% 74% at 50% 52%,#000 64%,transparent 100%);mask-image:radial-gradient(ellipse 76% 74% at 50% 52%,#000 64%,transparent 100%);z-index:0;animation:hpIn 1.8s ease both}
 @keyframes hpIn{from{opacity:0;transform:scale(1.05)}}
-.hl{position:absolute;right:14%;top:26%;width:44%;height:56%;background:radial-gradient(closest-side,rgba(255,110,20,.28),rgba(255,93,2,0));filter:blur(24px);z-index:0;pointer-events:none}
+.hl{position:absolute;right:6%;top:230px;width:min(46vw,740px);height:min(34vw,540px);background:radial-gradient(closest-side,rgba(255,110,20,.26),rgba(255,93,2,0));filter:blur(28px);z-index:0;pointer-events:none}
 .hero .eyebrow{color:#e3e6e9}
 .hero h1{text-shadow:0 2px 22px rgba(0,0,0,.6)}
 .fact{background:rgba(20,21,21,.55)}.fact span{color:#dfe2e5}
@@ -200,7 +200,7 @@ body{padding-bottom:50px}}
 .hform .btn{padding:15px 18px}
 .lead,.step p,.ad p,.of p,.prow span,.fact span,.cl small{font-weight:500}
 .ad p{color:#e1e4e7}.step p,.of p{color:#d3d6da}.eyebrow{color:#d3d6da}.light .eyebrow{color:#555a5e}
-@media(max-width:900px){.hp{width:100%;height:62%;top:60px;opacity:.55}.hl{display:none}.hero:before{background:linear-gradient(180deg,rgba(20,21,21,.55),#141515 62%)}.hform{grid-template-columns:1fr}.hero{min-height:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media(max-width:900px){.hp{width:100%;right:0;top:78px;opacity:.85}.hl{display:none}.hero:before{background:linear-gradient(180deg,rgba(20,21,21,.55),#141515 62%)}.hform{grid-template-columns:1fr}.hero{min-height:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
