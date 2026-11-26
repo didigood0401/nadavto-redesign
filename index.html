@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>НАДАВТО — капремонт КАМАЗ в Набережных Челнах</title>
+<meta name="description" content="Капитальный ремонт и восстановление КАМАЗ, ремонт аварийных машин, переоборудование. Срок 30 дней, гарантия до 6 месяцев.">
+<meta property="og:title" content="НАДАВТО — капремонт КАМАЗ в Набережных Челнах">
+<meta property="og:description" content="Капремонт «под новый» за 30 дней. Гарантия до 6 месяцев. Отгрузка по всей России.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0e1116">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1116'/%3E%3Cpath d='M14 48V16h8l20 20V16h8v32h-8L22 28v20z' fill='%23ff7a00'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#0e1116;--bg2:#151a22;--card:#1a212b;--line:#2a3340;--tx:#e8ecf1;--mut:#8f9bab;--ac:#ff7a00;--ac2:#ffb347;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(28px,4vw,44px);margin-bottom:12px}
+.lead{color:var(--mut);max-width:640px;margin-bottom:40px}
+.tag{display:inline-block;color:var(--ac);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;border-radius:12px;font-weight:700;border:0;cursor:pointer;font-size:16px;transition:.25s}
+.btn.p{background:linear-gradient(135deg,var(--ac),#ff9a2e);color:#111;box-shadow:0 8px 28px rgba(255,122,0,.35)}
+.btn.p:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(255,122,0,.5)}
+.btn.g{border:1px solid var(--line);color:var(--tx);background:transparent}
+.btn.g:hover{border-color:var(--ac);color:var(--ac)}
+.top{background:#090b0f;font-size:13px;color:var(--mut);padding:8px 0}
+.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:50;background:rgba(14,17,22,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.logo{font-weight:900;font-size:24px;letter-spacing:.04em}
+.logo b{color:var(--ac)}
+nav{display:flex;gap:26px;font-size:15px;font-weight:500}
+nav a{color:var(--mut);transition:.2s}nav a:hover{color:var(--ac)}
+.tel{font-weight:800;font-size:17px}
+.burger{display:none;background:none;border:0;color:var(--tx);font-size:28px}
+.hero{position:relative;padding:100px 0 80px;overflow:hidden;background:radial-gradient(900px 500px at 85% 20%,rgba(255,122,0,.22),transparent 60%),radial-gradient(600px 400px at 0 100%,rgba(60,110,200,.15),transparent 60%)}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 60px,rgba(255,255,255,.025) 60px 61px)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(36px,6vw,72px);margin-bottom:22px}
+.hero h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mut);font-size:18px;max-width:520px;margin-bottom:34px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.truck{width:100%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.5));animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:64px;position:relative}
+.stat{background:rgba(26,33,43,.7);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.stat b{display:block;font-size:34px;color:var(--ac)}
+.stat span{color:var(--mut);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:.3s;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,122,0,.14),transparent 55%);opacity:0;transition:.3s;pointer-events:none}
+.card:hover{transform:translateY(-6px);border-color:var(--ac)}.card:hover:before{opacity:1}
+.card .n{font-size:13px;color:var(--ac);font-weight:700}
+.card .ic{font-size:30px;margin:10px 0}
+.card h3{font-size:18px;position:relative}
+.alt{background:var(--bg2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{border-left:2px solid var(--ac);padding:4px 0 4px 20px;counter-increment:s}
+.step:before{content:"0" counter(s);display:block;font-size:34px;font-weight:900;color:var(--ac);opacity:.9}
+.step h3{margin:6px 0;font-size:19px}.step p{color:var(--mut);font-size:15px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.list{list-style:none}
+.list li{padding:10px 0 10px 32px;border-bottom:1px solid var(--line);position:relative}
+.list li:before{content:"✓";position:absolute;left:0;color:var(--ac);font-weight:900}
+.calc{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:36px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:11px 18px;border-radius:999px;border:1px solid var(--line);cursor:pointer;user-select:none;transition:.2s;font-size:15px}
+.chip.on{background:var(--ac);color:#111;border-color:var(--ac);font-weight:700}
+.chip:hover{border-color:var(--ac)}
+input,select,textarea{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font:inherit;margin-bottom:12px}
+input:focus{outline:0;border-color:var(--ac)}
+.res{background:var(--bg);border-radius:18px;padding:26px;border:1px dashed var(--ac)}
+.res b{font-size:40px;color:var(--ac);display:block}
+.pr{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.pr em{font-style:normal;color:var(--ac);font-size:24px}
+.cities{display:flex;flex-wrap:wrap;gap:10px}
+.cities span{padding:10px 18px;background:var(--card);border:1px solid var(--line);border-radius:999px;font-size:14px}
+.cities span:hover{border-color:var(--ac);color:var(--ac)}
+.adv .card h3{margin:8px 0}.adv .card p{color:var(--mut);font-size:15px;position:relative}
+.contact{background:linear-gradient(135deg,#1c1206,#0e1116 60%);border-top:1px solid var(--line)}
+.contact .two{align-items:start}
+.cl p{margin-bottom:14px;color:var(--mut)}.cl b{display:block;color:var(--tx);font-size:19px}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.rv{opacity:0;transform:translateY(28px);transition:.7s}.rv.in{opacity:1;transform:none}
+.float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--ac);color:#111;display:grid;place-items:center;font-size:26px;box-shadow:0 0 0 0 rgba(255,122,0,.6);animation:pl 2s infinite}
+@keyframes pl{to{box-shadow:0 0 0 22px rgba(255,122,0,0)}}
+.ph{aspect-ratio:4/3;border-radius:12px;background:linear-gradient(135deg,#222b37,#141a22);display:grid;place-items:center;font-size:42px;margin-bottom:14px;position:relative;overflow:hidden}
+.ph:after{content:"фото";position:absolute;right:10px;bottom:8px;font-size:11px;color:var(--mut);letter-spacing:.1em;text-transform:uppercase}
+.promo{background:linear-gradient(135deg,var(--ac),#ff9a2e);color:#111;border:0}
+.promo p{color:#2b1800!important}.promo h3{font-size:22px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--ac);font-size:22px;line-height:1}
+details[open] summary:after{content:"−"}
+details p{color:var(--mut);margin-top:12px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;place-items:center;z-index:100;padding:20px}
+.modal.on{display:grid}.modal .card{max-width:420px;width:100%}
+.top-btn{position:fixed;left:18px;bottom:18px;z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--tx);cursor:pointer;display:none;font-size:18px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media(max-width:900px){
+nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px;border-bottom:1px solid var(--line)}
+nav.open{display:flex}.burger{display:block}.tel{display:none}
+.hero .wrap,.two,.calc{grid-template-columns:1fr}.steps,.stats{grid-template-columns:1fr 1fr}
+section{padding:60px 0}.top span:last-child{display:none}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>📍 Набережные Челны, проезд Тозелеш, д. 28, офис 4</span><span>Пн–Пт 8:00–17:00 (мск), обед 12:00–13:00</span></div></div>
+<header><div class="wrap">
+<a class="logo" href="#">НАД<b>АВТО</b></a>
+<nav id="nav">
+<a href="#services">Услуги</a><a href="#production">Производство</a><a href="#promo">Акции</a><a href="#portfolio">Портфолио</a><a href="#prices">Прайсы</a><a href="#faq">Инфо</a><a href="#contacts">Контакты</a>
+</nav>
+<a class="tel" href="tel:+79872861663">+7 987 286-16-63</a>
+<button class="burger" onclick="nav.classList.toggle('open')">☰</button>
+</div></header>
+
+<section class="hero"><div class="wrap">
+<div>
+<span class="tag">Сертифицированное производство</span>
+<h1>Капремонт <span>КАМАЗ</span> «под новый» за 30 дней</h1>
+<p>Восстановительный ремонт и модернизация грузовиков. Машина с капремонтом — в два и более раза дешевле нового серийного КАМАЗа. Гарантия до 6 месяцев.</p>
+<div class="cta"><a class="btn p" href="#calc">Рассчитать стоимость →</a><a class="btn g" href="#services">Все услуги</a><button class="btn g" onclick="md.classList.add('on')">Заказать звонок</button></div>
+</div>
+<svg class="truck" viewBox="0 0 520 300" aria-label="КАМАЗ">
+<defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a2e"/><stop offset="1" stop-color="#d95f00"/></linearGradient><linearGradient id="d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a4656"/><stop offset="1" stop-color="#1e2631"/></linearGradient></defs>
+<rect x="20" y="200" width="480" height="14" rx="4" fill="#1e2631"/>
+<path d="M60 200V80h200l40 30v90z" fill="url(#d)" stroke="#4a586b" stroke-width="2"/>
+<path d="M80 100h160v90H80z" fill="#0e1116" opacity=".35"/>
+<path d="M300 200v-80h70l40 30v50z" fill="url(#b)"/>
+<path d="M380 120l30 30h-60v-30z" fill="#9fd0ff" opacity=".8"/>
+<rect x="410" y="160" width="70" height="40" rx="6" fill="url(#b)"/>
+<rect x="78" y="86" width="190" height="8" fill="#ff7a00"/>
+<g fill="#0a0c10" stroke="#555f6d" stroke-width="4"><circle cx="130" cy="220" r="34"/><circle cx="215" cy="220" r="34"/><circle cx="385" cy="220" r="34"/></g>
+<g fill="#ff7a00"><circle cx="130" cy="220" r="12"/><circle cx="215" cy="220" r="12"/><circle cx="385" cy="220" r="12"/></g>
+<text x="95" y="150" fill="#ff7a00" font-family="Arial" font-weight="900" font-size="26">НАДАВТО</text>
+</svg>
+</div>
+<div class="wrap"><div class="stats">
+<div class="stat"><b data-n="14">0</b><span>видов услуг</span></div>
+<div class="stat"><b data-n="30">0</b><span>дней — срок капремонта 6×4</span></div>
+<div class="stat"><b data-n="6">0</b><span>мес. гарантии (до 30 тыс. км)</span></div>
+<div class="stat"><b data-n="70">0+</b><span>готовых машин в галерее</span></div>
+</div></div>
+</section>
+
+<section id="services"><div class="wrap">
+<span class="tag">Услуги</span><h2>Всё для вашего КАМАЗа</h2>
+<p class="lead">От замены КПП до полного капремонта и переоборудования под вашу задачу — в собственном цехе.</p>
+<div class="grid" id="sg"></div>
+</div></section>
+
+<section id="production" class="alt"><div class="wrap">
+<span class="tag">Производство</span><h2>Как мы работаем</h2>
+<p class="lead">Прозрачный порядок: договор, предоплата, приёмка, расчёт.</p>
+<div class="steps rv">
+<div class="step"><h3>Договор</h3><p>Заключаем договор, можно отправить по факсу или почте.</p></div>
+<div class="step"><h3>Предоплата 50%</h3><p>Любая форма оплаты. Остаток — при получении машины.</p></div>
+<div class="step"><h3>Ремонт</h3><p>30 дней для 6×4, до 45 дней для вездеходов.</p></div>
+<div class="step"><h3>Приёмка</h3><p>Расчёт, документы, возможна доставка в ваш город.</p></div>
+</div>
+<div class="two" style="margin-top:56px">
+<div class="card"><h3>В капремонт входит</h3><ul class="list" style="margin-top:12px">
+<li>Ремонт или замена рамы</li><li>Ремонт или установка кабины</li><li>Замена электропроводки</li><li>Тормозная система и подвеска</li><li>Рулевое управление</li><li>Капремонт двигателя и КПП</li><li>Капремонт переднего и заднего мостов</li></ul></div>
+<div class="card"><h3>Комплектация</h3><p style="color:var(--mut);margin:12px 0">В основе — ремфонд: машину разбирают до рамы, красят и ставят заказанные узлы. Мелочёвка (тормоза, проводка, АКБ, РТИ) — как правило новая.</p>
+<h3 style="margin-top:20px">По желанию</h3><div class="cities" style="margin-top:12px"><span>Делитель</span><span>ЯМЗ двигатель и КПП</span><span>Шины 280</span><span>Усиление подвески</span><span>Новая кабина / кузов</span><span>Спальник</span><span>Гидровыводы</span><span>Наращивание бортов</span></div></div>
+</div></div></section>
+
+<section id="calc"><div class="wrap">
+<span class="tag">Калькулятор</span><h2>Расчёт стоимости ремонта</h2>
+<p class="lead">Отметьте нужные работы — менеджер перезвонит и назовёт точную цену.</p>
+<div class="calc">
+<div><div class="chips" id="chips"></div>
+<p style="color:var(--mut);margin-top:20px;font-size:14px">Демо: цены на сайте не публикуются, окончательную стоимость определяет менеджер.</p></div>
+<div class="res"><p style="color:var(--mut)">Выбрано работ</p><b id="cnt">0</b>
+<input placeholder="Ваше имя"><input placeholder="Телефон" type="tel">
+<button class="btn p" style="width:100%;justify-content:center" onclick="alert('Демо: заявка не отправляется')">Получить расчёт</button></div>
+</div></div></section>
+
+<section class="alt adv"><div class="wrap">
+<span class="tag">Преимущества</span><h2>Почему НАДАВТО</h2><p class="lead">&nbsp;</p>
+<div class="grid">
+<div class="card rv"><div class="ic">🛠</div><h3>Профессионализм</h3><p>Специалисты с многолетним опытом диагностики и сервиса.</p></div>
+<div class="card rv"><div class="ic">⚡</div><h3>Скорость</h3><p>Современное оборудование и опытный персонал.</p></div>
+<div class="card rv"><div class="ic">💰</div><h3>Стоимость</h3><p>Скидки постоянным клиентам.</p></div>
+<div class="card rv"><div class="ic">🏅</div><h3>Качество</h3><p>Сертификаты на все виды работ.</p></div>
+<div class="card rv"><div class="ic">🛡</div><h3>Гарантия</h3><p>Распространяется на все виды работ.</p></div>
+</div></div></section>
+
+<section id="promo"><div class="wrap">
+<span class="tag">Акции</span><h2>Выгодные предложения</h2><p class="lead">Условия уточняйте у менеджера — демо без конкретных цифр.</p>
+<div class="grid">
+<div class="card promo rv"><h3>Скидки постоянным клиентам</h3><p>Для тех, кто обращается повторно или ремонтирует парк машин.</p></div>
+<div class="card promo rv"><h3>Ремонт в лизинг</h3><p>Капремонт КАМАЗ с возможностью лизинга.</p></div>
+<div class="card promo rv"><h3>Машины с капремонта в наличии</h3><p>Готовые автомобили и сборка под заказ.</p></div>
+</div></div></section>
+
+<section id="portfolio" class="alt"><div class="wrap">
+<span class="tag">Портфолио</span><h2>Наши работы</h2><p class="lead">Более 70 фото машин после капремонта. Здесь будут реальные снимки из галереи.</p>
+<div class="grid">
+<div class="card rv"><div class="ph">🚛</div><h3>Самосвал после капремонта</h3></div>
+<div class="card rv"><div class="ph">🚘</div><h3>Ремонт и покраска кабины</h3></div>
+<div class="card rv"><div class="ph">📐</div><h3>Ремонт и усиление рамы</h3></div>
+<div class="card rv"><div class="ph">⚙️</div><h3>Установка двигателя ЯМЗ</h3></div>
+<div class="card rv"><div class="ph">🏗</div><h3>Установка КМУ</h3></div>
+<div class="card rv"><div class="ph">⬆️</div><h3>Наращивание бортов</h3></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap" style="max-width:820px">
+<span class="tag">Инфо</span><h2>Частые вопросы</h2><p class="lead">&nbsp;</p>
+<details><summary>Сколько длится капремонт?</summary><p>30 дней для машин с колёсной формулой 6×4, до 45 дней для вездеходов.</p></details>
+<details><summary>Какая гарантия?</summary><p>До 30 тыс. км пробега или до 6 месяцев, на все виды работ.</p></details>
+<details><summary>Как оплатить?</summary><p>Предоплата 50% при заключении договора, остаток при получении готовой машины. Форма оплаты любая.</p></details>
+<details><summary>Можно ли доставить машину в мой город?</summary><p>Да, при полной оплате. Перегон оплачивается дополнительно.</p></details>
+<details><summary>Из чего собирают машину?</summary><p>За основу берут б/у машину (ремфонд), разбирают до рамы, красят и ставят заказанные узлы. Кабина, двигатель, кузов, КПП и мосты — с капремонта, мелочёвка обычно новая.</p></details>
+</div></section>
+
+<section id="prices" class="alt"><div class="wrap">
+<span class="tag">Прайсы</span><h2>Каталог и прайс-листы</h2><p class="lead">Ориентировочные цены на машины с капремонтом — под заказ и в наличии.</p>
+<div class="grid">
+<a class="card pr" href="#contacts"><h3>А/м КамАЗ с капремонта</h3><em>→</em></a>
+<a class="card pr" href="#contacts"><h3>Мосты</h3><em>→</em></a>
+<a class="card pr" href="#contacts"><h3>Защитный тент оператора</h3><em>→</em></a>
+<a class="card pr" href="#contacts"><h3>Ось балансира КАМАЗ</h3><em>→</em></a>
+</div></div></section>
+
+<section id="geo"><div class="wrap">
+<span class="tag">География</span><h2>Отгружаем по всей России</h2><p class="lead">Доставка в город заказчика при полной оплате, перегон за дополнительную плату.</p>
+<div class="cities"><span>Башкирия</span><span>Казахстан</span><span>Саратов</span><span>Бузулук</span><span>Оренбург</span><span>Кемерово</span><span>Вологда</span><span>Нижний Новгород</span><span>Москва</span><span>Астрахань</span><span>Челябинск</span><span>и ещё 25+ городов</span></div>
+</div></section>
+
+<section id="contacts" class="contact"><div class="wrap two">
+<div><span class="tag">Контакты</span><h2>Оставьте заявку</h2><p class="lead">Перезвоним в рабочее время и ответим на любой вопрос по ремонту.</p>
+<div class="cl"><p>Телефоны<b>+7 987 286-16-63</b><b>+7 917 238-46-18</b></p><p>WhatsApp<b>+7 960 073-36-51</b></p><p>Email<b>nadavto2014@yandex.ru</b></p><p>Адрес<b>Набережные Челны, проезд Тозелеш, д. 28, офис 4</b></p></div></div>
+<form class="card" onsubmit="event.preventDefault();alert('Демо: заявка не отправляется')">
+<h3 style="margin-bottom:16px">Заказать звонок</h3>
+<input placeholder="Имя" required><input placeholder="Телефон" type="tel" required>
+<select><option>Капремонт КАМАЗ</option><option>Ремонт кабины / рамы</option><option>Переоборудование</option><option>Другое</option></select>
+<textarea rows="3" placeholder="Комментарий"></textarea>
+<button class="btn p" style="width:100%;justify-content:center">Отправить</button>
+<p style="font-size:12px;color:var(--mut);margin-top:10px">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+</form></div></section>
+
+<footer><div class="wrap"><span>© ООО «НПО «НАДАВТО», Набережные Челны</span><span>Демо-версия редизайна</span></div></footer>
+<a class="float" href="tel:+79872861663" aria-label="Позвонить">📞</a>
+<button class="top-btn" id="up" aria-label="Наверх" onclick="scrollTo({top:0})">↑</button>
+<div class="modal" id="md" onclick="if(event.target===md)md.classList.remove('on')">
+<form class="card" onsubmit="event.preventDefault();md.classList.remove('on');alert('Демо: заявка не отправляется')">
+<h3 style="margin-bottom:16px">Заказать звонок</h3>
+<input placeholder="Имя" required><input placeholder="Телефон" type="tel" required>
+<button class="btn p" style="width:100%;justify-content:center">Перезвоните мне</button></form></div>
+
+<script>
+const S=[["Ремонт в лизинг автомобилей КАМАЗ","📄"],["Переоборудование автомобилей КамАЗ","🔧"],["Переоборудование в самосвалы карьерные и с/х","🚛"],["Установка гидроманипуляторов (КМУ)","🏗"],["Установка двигателей ЯМЗ","⚙️"],["Ремонт кабин а/м КАМАЗ","🚘"],["Ремонт рам а/м КАМАЗ","📐"],["Ремонт грузовых платформ","📦"],["Ремонт аварийных а/м КАМАЗ","💥"],["Гидрофикация","💧"],["Наращивание бортов","⬆️"],["Ремонт спецтехники","🚜"],["Замена КПП","🕹"],["Капремонт двигателей КАМАЗ","🔩"]];
+sg.innerHTML=S.map((s,i)=>`<a href="#contacts" class="card rv"><span class="n">${String(i+1).padStart(2,0)}</span><div class="ic">${s[1]}</div><h3>${s[0]}</h3></a>`).join("");
+const W=["Кабина","ДВС","Рама","Передняя ходовая","КПП","Задняя тележка","Кузов"];
+chips.innerHTML=W.map(w=>`<span class="chip">${w}</span>`).join("");
+chips.onclick=e=>{if(e.target.classList.contains("chip")){e.target.classList.toggle("on");cnt.textContent=chips.querySelectorAll(".on").length}};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,n=+el.dataset.n,plus=el.textContent.includes("+");let c=0;const t=setInterval(()=>{c+=Math.ceil(n/30);if(c>=n){c=n;clearInterval(t)}el.textContent=c+(plus?"+":"")},35);so.unobserve(el)}));
+document.querySelectorAll("[data-n]").forEach(el=>so.observe(el));
+nav.onclick=()=>nav.classList.remove("open");
+addEventListener("scroll",()=>up.style.display=scrollY>600?"block":"none");
+addEventListener("keydown",e=>e.key==="Escape"&&md.classList.remove("on"));
+</script>
+</body>
+</html>
