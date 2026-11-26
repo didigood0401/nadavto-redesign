@@ -101,6 +101,39 @@ details p{color:var(--mut);margin-top:12px}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;place-items:center;z-index:100;padding:20px}
 .modal.on{display:grid}.modal .card{max-width:420px;width:100%}
 .top-btn{position:fixed;left:18px;bottom:18px;z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--tx);cursor:pointer;display:none;font-size:18px}
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));z-index:200}
+header{transition:.3s}header.sm .wrap{height:56px}header .wrap{transition:.3s}
+body{animation:pg .8s ease both}@keyframes pg{from{opacity:0}}
+.hs{position:relative;aspect-ratio:4/3;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 6px rgba(255,122,0,.08);transform:perspective(1200px) rotateY(-4deg);transition:transform .5s}
+.hs:hover{transform:perspective(1200px) rotateY(0)}
+.hs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.02);transition:opacity 1.2s}
+.hs img.on{opacity:1;animation:kb 9s ease-out forwards}
+@keyframes kb{to{transform:scale(1.12)}}
+.hs .dots{position:absolute;left:16px;bottom:14px;display:flex;gap:8px;z-index:2}
+.hs .dots i{width:26px;height:4px;border-radius:2px;background:rgba(255,255,255,.35);cursor:pointer}.hs .dots i.on{background:var(--ac)}
+.hs:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,17,22,.55),transparent 45%);pointer-events:none}
+.vids{display:grid;grid-template-columns:1.6fr 1fr;gap:18px}
+.vbig{grid-row:span 2}
+.vc{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#000;transition:.35s}
+.vc:hover{transform:translateY(-5px);border-color:var(--ac);box-shadow:0 20px 50px rgba(255,122,0,.18)}
+.vc video{width:100%;height:100%;display:block;object-fit:cover;aspect-ratio:16/9}
+.vbig video{aspect-ratio:auto;min-height:100%}
+.vc span{position:absolute;left:14px;top:12px;background:rgba(14,17,22,.8);padding:6px 12px;border-radius:999px;font-size:13px;pointer-events:none;backdrop-filter:blur(6px)}
+.gal{columns:3 260px;column-gap:16px}
+.gi{break-inside:avoid;margin-bottom:16px;position:relative;border-radius:var(--r);overflow:hidden;cursor:zoom-in;border:1px solid var(--line);background:var(--card)}
+.gi img{width:100%;display:block;transition:transform .7s}
+.gi:hover img{transform:scale(1.07)}
+.gi div{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 14px;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent);font-size:14px;transform:translateY(100%);transition:.4s}
+.gi:hover div{transform:none}
+.lb{position:fixed;inset:0;background:rgba(5,7,10,.94);z-index:300;display:none;place-items:center;padding:20px}
+.lb.on{display:grid;animation:pg .3s}
+.lb img{max-width:92vw;max-height:80vh;border-radius:12px;box-shadow:0 30px 90px #000}
+.lb p{text-align:center;margin-top:14px;color:var(--mut)}
+.lb button{position:absolute;background:rgba(255,255,255,.1);border:0;color:#fff;width:52px;height:52px;border-radius:50%;font-size:24px;cursor:pointer;transition:.2s}
+.lb button:hover{background:var(--ac);color:#111}
+.lb .x{top:20px;right:20px}.lb .pv{left:20px;top:50%}.lb .nx{right:20px;top:50%}
+.rv:nth-child(2){transition-delay:.08s}.rv:nth-child(3){transition-delay:.16s}.rv:nth-child(4){transition-delay:.24s}
+@media(max-width:900px){.vids{grid-template-columns:1fr}.hs{transform:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 @media(max-width:900px){
 nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px;border-bottom:1px solid var(--line)}
@@ -127,19 +160,7 @@ section{padding:60px 0}.top span:last-child{display:none}}
 <p>Восстановительный ремонт и модернизация грузовиков. Машина с капремонтом — в два и более раза дешевле нового серийного КАМАЗа. Гарантия до 6 месяцев.</p>
 <div class="cta"><a class="btn p" href="#calc">Рассчитать стоимость →</a><a class="btn g" href="#services">Все услуги</a><button class="btn g" onclick="md.classList.add('on')">Заказать звонок</button></div>
 </div>
-<svg class="truck" viewBox="0 0 520 300" aria-label="КАМАЗ">
-<defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a2e"/><stop offset="1" stop-color="#d95f00"/></linearGradient><linearGradient id="d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a4656"/><stop offset="1" stop-color="#1e2631"/></linearGradient></defs>
-<rect x="20" y="200" width="480" height="14" rx="4" fill="#1e2631"/>
-<path d="M60 200V80h200l40 30v90z" fill="url(#d)" stroke="#4a586b" stroke-width="2"/>
-<path d="M80 100h160v90H80z" fill="#0e1116" opacity=".35"/>
-<path d="M300 200v-80h70l40 30v50z" fill="url(#b)"/>
-<path d="M380 120l30 30h-60v-30z" fill="#9fd0ff" opacity=".8"/>
-<rect x="410" y="160" width="70" height="40" rx="6" fill="url(#b)"/>
-<rect x="78" y="86" width="190" height="8" fill="#ff7a00"/>
-<g fill="#0a0c10" stroke="#555f6d" stroke-width="4"><circle cx="130" cy="220" r="34"/><circle cx="215" cy="220" r="34"/><circle cx="385" cy="220" r="34"/></g>
-<g fill="#ff7a00"><circle cx="130" cy="220" r="12"/><circle cx="215" cy="220" r="12"/><circle cx="385" cy="220" r="12"/></g>
-<text x="95" y="150" fill="#ff7a00" font-family="Arial" font-weight="900" font-size="26">НАДАВТО</text>
-</svg>
+<div class="hs" id="hs"><img src="media/hero1.webp" alt="Цех капитального ремонта КАМАЗ" class="on" fetchpriority="high"><img src="media/hero2.webp" alt="КАМАЗ 45143 после капитального ремонта"><img src="media/hero3.webp" alt="КАМАЗ 65115 ломовоз после капремонта"><div class="dots"><i class="on"></i><i></i><i></i></div></div>
 </div>
 <div class="wrap"><div class="stats">
 <div class="stat"><b data-n="14">0</b><span>видов услуг</span></div>
@@ -192,6 +213,8 @@ section{padding:60px 0}.top span:last-child{display:none}}
 <div class="card rv"><div class="ic">🛡</div><h3>Гарантия</h3><p>Распространяется на все виды работ.</p></div>
 </div></div></section>
 
+<section id="video"><div class="wrap"><span class="tag">Видео</span><h2>Производство вживую</h2><p class="lead">Ролики из нашего цеха: подготовка шасси, отгрузка готовых машин.</p><div class="vids"><div class="vc vbig rv"><video controls preload="none" poster="media/hero1.webp" src="media/v1.mp4"></video><span>Капремонт КАМАЗ</span></div><div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v3.mp4" data-auto></video><span>Шасси КАМАЗ-4310 к капремонту</span></div><div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v2.mp4" data-auto></video><span>Отправка после ремонта</span></div><div class="vc rv"><video muted loop playsinline preload="metadata" src="media/v4.mp4" data-auto></video><span>Кузов КАМАЗ-65115</span></div></div></div></section>
+
 <section id="promo"><div class="wrap">
 <span class="tag">Акции</span><h2>Выгодные предложения</h2><p class="lead">Условия уточняйте у менеджера — демо без конкретных цифр.</p>
 <div class="grid">
@@ -200,16 +223,7 @@ section{padding:60px 0}.top span:last-child{display:none}}
 <div class="card promo rv"><h3>Машины с капремонта в наличии</h3><p>Готовые автомобили и сборка под заказ.</p></div>
 </div></div></section>
 
-<section id="portfolio" class="alt"><div class="wrap">
-<span class="tag">Портфолио</span><h2>Наши работы</h2><p class="lead">Более 70 фото машин после капремонта. Здесь будут реальные снимки из галереи.</p>
-<div class="grid">
-<div class="card rv"><div class="ph">🚛</div><h3>Самосвал после капремонта</h3></div>
-<div class="card rv"><div class="ph">🚘</div><h3>Ремонт и покраска кабины</h3></div>
-<div class="card rv"><div class="ph">📐</div><h3>Ремонт и усиление рамы</h3></div>
-<div class="card rv"><div class="ph">⚙️</div><h3>Установка двигателя ЯМЗ</h3></div>
-<div class="card rv"><div class="ph">🏗</div><h3>Установка КМУ</h3></div>
-<div class="card rv"><div class="ph">⬆️</div><h3>Наращивание бортов</h3></div>
-</div></div></section>
+<section id="portfolio" class="alt"><div class="wrap"><span class="tag">Портфолио</span><h2>Наши работы</h2><p class="lead">Реальные КАМАЗы после капитального ремонта в нашем цехе. Нажмите на фото, чтобы открыть крупно.</p><div class="gal" id="gal"></div></div></section>
 
 <section id="faq"><div class="wrap" style="max-width:820px">
 <span class="tag">Инфо</span><h2>Частые вопросы</h2><p class="lead">&nbsp;</p>
@@ -255,6 +269,8 @@ section{padding:60px 0}.top span:last-child{display:none}}
 <input placeholder="Имя" required><input placeholder="Телефон" type="tel" required>
 <button class="btn p" style="width:100%;justify-content:center">Перезвоните мне</button></form></div>
 
+<div class="bar" id="bar"></div><div class="lb" id="lb"><button class="x">✕</button><button class="pv">‹</button><button class="nx">›</button><div style="text-align:center"><img id="lbi" alt=""><p id="lbt"></p></div></div>
+<script src="media/gallery.js"></script>
 <script>
 const S=[["Ремонт в лизинг автомобилей КАМАЗ","📄"],["Переоборудование автомобилей КамАЗ","🔧"],["Переоборудование в самосвалы карьерные и с/х","🚛"],["Установка гидроманипуляторов (КМУ)","🏗"],["Установка двигателей ЯМЗ","⚙️"],["Ремонт кабин а/м КАМАЗ","🚘"],["Ремонт рам а/м КАМАЗ","📐"],["Ремонт грузовых платформ","📦"],["Ремонт аварийных а/м КАМАЗ","💥"],["Гидрофикация","💧"],["Наращивание бортов","⬆️"],["Ремонт спецтехники","🚜"],["Замена КПП","🕹"],["Капремонт двигателей КАМАЗ","🔩"]];
 sg.innerHTML=S.map((s,i)=>`<a href="#contacts" class="card rv"><span class="n">${String(i+1).padStart(2,0)}</span><div class="ic">${s[1]}</div><h3>${s[0]}</h3></a>`).join("");
@@ -268,6 +284,18 @@ document.querySelectorAll("[data-n]").forEach(el=>so.observe(el));
 nav.onclick=()=>nav.classList.remove("open");
 addEventListener("scroll",()=>up.style.display=scrollY>600?"block":"none");
 addEventListener("keydown",e=>e.key==="Escape"&&md.classList.remove("on"));
-</script>
+gal.innerHTML=GALLERY.map((g,i)=>`<div class="gi rv" data-i="${i}"><img loading="lazy" src="media/${g.f}" alt="${g.t}" width="${g.w}" height="${g.h}"><div>${g.t}</div></div>`).join("");
+gal.querySelectorAll(".rv").forEach(el=>io.observe(el));
+let cur=0;const show=i=>{cur=(i+GALLERY.length)%GALLERY.length;lbi.src="media/"+GALLERY[cur].f;lbt.textContent=GALLERY[cur].t;lb.classList.add("on")};
+gal.onclick=e=>{const g=e.target.closest(".gi");if(g)show(+g.dataset.i)};
+lb.querySelector(".x").onclick=()=>lb.classList.remove("on");lb.querySelector(".pv").onclick=()=>show(cur-1);lb.querySelector(".nx").onclick=()=>show(cur+1);
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove("on")};
+addEventListener("keydown",e=>{if(!lb.classList.contains("on"))return;if(e.key==="Escape")lb.classList.remove("on");if(e.key==="ArrowLeft")show(cur-1);if(e.key==="ArrowRight")show(cur+1)});
+const hi=[...hs.querySelectorAll("img")],hd=[...hs.querySelectorAll(".dots i")];let hc=0;
+const go=n=>{hi[hc].classList.remove("on");hd[hc].classList.remove("on");hc=n;hi[hc].classList.add("on");hd[hc].classList.add("on")};
+hd.forEach((d,i)=>d.onclick=()=>go(i));setInterval(()=>go((hc+1)%hi.length),5500);
+const vo=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?e.target.play().catch(()=>{}):e.target.pause()),{threshold:.4});
+document.querySelectorAll("video[data-auto]").forEach(v=>vo.observe(v));
+addEventListener("scroll",()=>{bar.style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+"%";document.querySelector("header").classList.toggle("sm",scrollY>80)});</script>
 </body>
 </html>
