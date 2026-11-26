@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=PT+Mono&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#141515;--g1:#1a1a1a;--g2:#1e1e1e;--g3:#282828;--line:#343434;--soft:#f3f3f3;--silver:#e2e2e2;--mute:#9a9a9a;--ac:#ff5d02;--r:14px}
+:root{--ink:#141515;--g1:#1a1a1a;--g2:#1e1e1e;--g3:#282828;--line:#343434;--soft:#f3f3f3;--silver:#e2e2e2;--mute:#c5c9ce;--ac:#ff5d02;--r:14px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:"Golos Text","Segoe UI",system-ui,sans-serif;background:var(--g1);color:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
@@ -29,7 +29,7 @@ h2{font-size:clamp(30px,4.2vw,56px);margin-bottom:18px}
 .eyebrow{font-family:"PT Mono",monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:18px;display:flex;align-items:center;gap:12px}
 .eyebrow:before{content:"";width:28px;height:2px;background:var(--ac)}
 .lead{max-width:640px;color:var(--mute);font-size:18px;margin-bottom:48px}
-.light .lead{color:#5b5f62}
+.light .lead{color:#444a4f}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 34px;border-radius:50px;font-family:Oswald,sans-serif;font-weight:600;font-size:16px;letter-spacing:.05em;text-transform:uppercase;background:var(--ac);color:#fff;border:1px solid var(--ac);cursor:pointer;transition:.25s}
 .btn:hover{background:#fff;color:var(--ink);border-color:#fff}
 .btn.ghost{background:transparent;border-color:rgba(255,255,255,.4)}
@@ -50,13 +50,13 @@ nav a{opacity:.8;transition:.2s}nav a:hover{opacity:1;color:var(--ac)}
 .hc span{font-size:12px;color:var(--mute)}
 header .btn{padding:11px 24px;font-size:14px}
 .burger{display:none;background:none;border:0;color:#fff;font-size:30px;margin-left:auto;cursor:pointer}
-.hero{position:relative;min-height:880px;padding:170px 0 0;display:flex;flex-direction:column;justify-content:space-between;background:#0c0d0d url(media/gal11.webp) center/cover no-repeat}
-.hbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.hero:before{z-index:1;content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,21,21,.80) 0%,rgba(20,21,21,.42) 52%,rgba(20,21,21,.08)),linear-gradient(0deg,var(--g1),transparent 30%)}
+.hero{position:relative;min-height:900px;padding:170px 0 0;display:flex;flex-direction:column;justify-content:space-between;background:var(--ink);overflow:hidden}
+.hero:before{z-index:1;content:"";position:absolute;inset:0;background:linear-gradient(90deg,#141515 0%,#141515 34%,rgba(20,21,21,.6) 52%,rgba(20,21,21,0) 78%),linear-gradient(180deg,rgba(20,21,21,.88) 0%,rgba(20,21,21,.28) 26%,rgba(20,21,21,0) 44%),linear-gradient(0deg,var(--g1) 0%,rgba(26,26,26,0) 32%)}
 .hero .wrap{position:relative;z-index:2;width:100%}.hero h1,.hero p.s{text-shadow:0 2px 18px rgba(0,0,0,.45)}
-.hg{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.hg{display:block;max-width:590px}
 .hero h1{font-size:clamp(30px,4vw,56px);font-weight:700;margin-bottom:26px}
 .hero h1 em{font-style:normal;color:var(--ac)}
-.hero p.s{font-size:17px;color:#d4d6d8;max-width:560px;margin-bottom:36px}
+.hero p.s{font-size:17px;color:#eef0f2;font-weight:500;max-width:560px;margin-bottom:36px}
 .cta{display:flex;gap:14px;flex-wrap:wrap}
 .form{background:rgba(26,26,26,.92);border:1px solid var(--line);border-radius:20px;padding:32px}
 .form h3{font-size:28px;margin-bottom:8px}
@@ -115,7 +115,7 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--ac)}
 .chip{padding:13px 22px;border-radius:50px;border:1px solid #bdbdbd;cursor:pointer;user-select:none;transition:.2s;font-weight:500;background:#fff}
 .chip:hover{border-color:var(--ink)}
 .chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.note{font-size:14px;color:#6b6f72}
+.note{font-size:14px;color:#555a5e}
 .cform{background:var(--ink);color:#fff;border-radius:20px;padding:32px}
 .cform h3{font-size:28px;margin-bottom:6px}
 .cform .cnt{font-family:"PT Mono",monospace;font-size:13px;color:var(--mute);margin-bottom:18px;display:block}
@@ -154,7 +154,7 @@ summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:fl
 summary::-webkit-details-marker{display:none}
 summary:after{content:"+";color:var(--ac);font-size:26px;line-height:1}
 details[open] summary:after{content:"−"}
-details p{color:#5b5f62;margin-top:12px}
+details p{color:#4a4f53;margin-top:12px}
 .gf{display:grid;grid-template-columns:1fr 1fr;gap:64px}
 .cg{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
 .cl{display:grid;gap:0}
@@ -186,7 +186,21 @@ header .wrap{height:68px}header{background:var(--ink)}
 .mbar button{background:var(--ac);border:0}
 body{padding-bottom:50px}}
 @media(max-width:560px){.grid,.adv{grid-template-columns:1fr}.wrap{padding:0 18px}.cta .btn{width:100%}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.hp{position:absolute;right:0;top:0;width:64%;height:100%;object-fit:cover;object-position:45% 50%;filter:contrast(1.1) saturate(1.12) brightness(.93);z-index:0;animation:hpIn 1.8s ease both}
+@keyframes hpIn{from{opacity:0;transform:scale(1.05)}}
+.hl{position:absolute;right:14%;top:26%;width:44%;height:56%;background:radial-gradient(closest-side,rgba(255,110,20,.28),rgba(255,93,2,0));filter:blur(24px);z-index:0;pointer-events:none}
+.hero .eyebrow{color:#e3e6e9}
+.hero h1{text-shadow:0 2px 22px rgba(0,0,0,.6)}
+.fact{background:rgba(20,21,21,.55)}.fact span{color:#dfe2e5}
+.hform{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:rgba(20,21,21,.82);border:1px solid #3d3d3d;border-radius:20px;padding:22px;backdrop-filter:blur(10px);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.hform input{margin:0}
+.hform .ht{grid-column:1/-1}.hform .ht b{display:block;font-family:Oswald,sans-serif;text-transform:uppercase;font-size:24px;font-weight:600}
+.hform .ht span{font-size:14px;color:#d3d6da}
+.hform .ck{grid-column:1/-1;margin:2px 0 0;color:#c5c9ce}
+.hform .btn{padding:15px 18px}
+.lead,.step p,.ad p,.of p,.prow span,.fact span,.cl small{font-weight:500}
+.ad p{color:#e1e4e7}.step p,.of p{color:#d3d6da}.eyebrow{color:#d3d6da}.light .eyebrow{color:#555a5e}
+@media(max-width:900px){.hp{width:100%;height:62%;top:60px;opacity:.55}.hl{display:none}.hero:before{background:linear-gradient(180deg,rgba(20,21,21,.55),#141515 62%)}.hform{grid-template-columns:1fr}.hero{min-height:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -211,21 +225,15 @@ body{padding-bottom:50px}}
 <button class="burger" aria-label="Меню" onclick="nav.classList.toggle('open')">☰</button>
 </div></header>
 
-<section class="hero" style="padding-bottom:0"><video class="hbg" autoplay muted loop playsinline preload="auto" poster="media/gal11.webp" src="media/v2.mp4"></video><div class="wrap">
+<section class="hero" style="padding-bottom:0"><img class="hp" src="media/gal03.webp" alt="КАМАЗ-45143 после капитального ремонта" fetchpriority="high"><div class="hl"></div><div class="wrap">
 <div class="hg">
 <div>
 <div class="eyebrow">Сертифицированное производство · Набережные Челны</div>
 <h1>Капитальный ремонт КАМАЗ <em>«под новый»</em> за 30 дней</h1>
 <p class="s">Восстановительный ремонт и модернизация грузовиков в собственном цехе. Машина с капремонтом — в два и более раза дешевле нового серийного КАМАЗа.</p>
-<div class="cta"><a class="btn" href="#calc">Рассчитать стоимость</a><a class="btn ghost" href="https://wa.me/79600733651" target="_blank" rel="noopener">Написать в WhatsApp</a></div>
+
 </div>
-<form class="form lead-form">
-<h3>Получить расчёт</h3><p class="m">Оставьте номер — менеджер перезвонит в рабочее время и уточнит задачу.</p>
-<input name="n" placeholder="Ваше имя" required autocomplete="name">
-<input name="p" type="tel" placeholder="+7 ___ ___-__-__" required autocomplete="tel">
-<label class="ck"><input type="checkbox" required checked>Согласен на обработку персональных данных</label>
-<button class="btn wide">Отправить заявку</button>
-</form>
+<form class="lead-form hform"><div class="ht"><b>Получить расчёт</b><span>Менеджер перезвонит в рабочее время и уточнит задачу</span></div><input name="n" placeholder="Ваше имя" required autocomplete="name"><input name="p" type="tel" placeholder="Телефон" required autocomplete="tel"><button class="btn">Отправить заявку</button><a class="btn ghost" href="https://wa.me/79600733651" target="_blank" rel="noopener">WhatsApp</a><label class="ck"><input type="checkbox" required checked>Согласен на обработку персональных данных</label></form>
 </div></div>
 <div class="wrap" style="padding:0"><div class="facts">
 <div class="fact"><b>30 дней</b><span>срок капремонта 6×4</span></div>
@@ -257,7 +265,7 @@ body{padding-bottom:50px}}
 <div class="eyebrow">03 / Состав работ</div><h2>Что входит в капремонт</h2><p class="lead">&nbsp;</p>
 <div class="two">
 <div class="panel rv"><h3>Работы</h3><ul class="spec"><li>Ремонт или замена рамы</li><li>Ремонт или установка кабины</li><li>Замена электропроводки</li><li>Ремонт тормозной системы и подвески</li><li>Ремонт рулевого управления</li><li>Капремонт двигателя и КПП</li><li>Капремонт переднего и заднего мостов</li></ul></div>
-<div class="panel rv"><h3>Комплектация</h3><p style="color:#5b5f62;margin-bottom:22px">В основе — б/у машина (ремфонд). Её разбирают до рамы, красят и устанавливают заказанные узлы. Кабина, двигатель, кузов, КПП и мосты — с капремонта, мелочёвка (тормоза, проводка, АКБ, РТИ) как правило новая.</p>
+<div class="panel rv"><h3>Комплектация</h3><p style="color:#4a4f53;margin-bottom:22px">В основе — б/у машина (ремфонд). Её разбирают до рамы, красят и устанавливают заказанные узлы. Кабина, двигатель, кузов, КПП и мосты — с капремонта, мелочёвка (тормоза, проводка, АКБ, РТИ) как правило новая.</p>
 <h3 style="font-size:22px">По желанию заказчика</h3><div class="tags"><span>Делитель</span><span>Двигатель и КПП ЯМЗ</span><span>Шины 280</span><span>Усиление подвески</span><span>Новая кабина или кузов</span><span>Спальник</span><span>Гидровыводы на прицеп</span><span>Наращивание бортов</span></div></div>
 </div></div></section>
 
